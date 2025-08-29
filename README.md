@@ -10,6 +10,7 @@
 - [GraphNetWorkCommunicate  ·  English README](#graphnetworkcommunicate----english-readme)
   - [目录](#目录)
   - [项目定位与导航](#项目定位与导航)
+    - [知识体系特点](#知识体系特点)
   - [阅读与导航](#阅读与导航)
   - [关键文档导航](#关键文档导航)
   - [贡献指南](#贡献指南)
