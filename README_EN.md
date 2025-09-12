@@ -24,7 +24,8 @@
 **This project is 100% complete**, the `docs/` directory contains a comprehensive knowledge curation system:
 
 - **8 Core Branches**: Graph Theory, Network Topology, Communication Protocols, Distributed Systems, Quantum Communication, Biological Networks, Social Networks, Formal Proof
-- **56 Core Documents**: Covering concept definitions, properties, theorems, formal proofs, algorithmic ideas, multimodal expressions
+- **64 Documents (including branch READMEs)**: Covering concept definitions, properties, theorems, formal proofs, algorithmic ideas, multimodal expressions
+- **Extension Branches**: AI Networks & Adaptive Categories, Complex Systems & Multi-Scale Modeling
 - **Pure Knowledge Curation**: No engineering implementation, running scripts, dependency installation, or programming technical content
 
 ### Knowledge System Features
@@ -65,7 +66,7 @@
 Welcome to participate through Issues and PRs:
 
 - Please ensure documents pass basic checks (spelling/links/terminology consistency) before submission
-- Changes must maintain terminology consistency and statistical caliber (current: 8 branches | 56 documents)
+- Changes must maintain terminology consistency and statistical caliber (current: 8 core branches | 64 documents, including branch READMEs)
 - New content should follow knowledge curation standards, no engineering implementation details
 
 ---

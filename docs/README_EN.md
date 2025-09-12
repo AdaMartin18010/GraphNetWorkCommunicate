@@ -30,7 +30,7 @@ This knowledge system provides comprehensive bilingual support (Chinese-English)
 - **Concept Definitions**: All core concepts have both Chinese and English definitions
 - **Theorem Statements**: All theorems are presented in both languages
 - **Proof Explanations**: Detailed proof explanations in both languages
-- **Code Comments**: All code implementations include bilingual comments
+- **Explanations and Examples**: Expository texts and examples include bilingual annotations
 - **Visualization Labels**: All diagrams and charts have bilingual labels
 
 ## 📖 **Reading Guide**
@@ -45,7 +45,7 @@ Focus on the **08-Formal Verification** section for rigorous mathematical founda
 
 ### For Engineers
 
-Begin with practical implementations in each branch's case studies and application examples.
+Start with application-oriented cases and comparative analyses curated in each branch.
 
 ### For Students
 
@@ -61,7 +61,7 @@ Follow the progressive learning path: Graph Theory → Network Topology → Comm
 ## 📊 **Quality Standards**
 
 - **Mathematical Rigor**: All definitions and theorems follow strict mathematical standards
-- **Code Quality**: All implementations include comprehensive tests and documentation
+- **Editorial Quality**: Terminology is consistent; entries are structured and well-referenced
 - **Visualization**: All diagrams are generated using standardized tools (Mermaid, Graphviz, etc.)
 - **Accessibility**: Content is designed to be accessible to diverse audiences
 
