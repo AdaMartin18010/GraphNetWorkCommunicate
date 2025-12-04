@@ -16,7 +16,7 @@ Petri网（Petri Net）是一种用于描述并发系统、分布式系统和异
 
 - [Petri网理论 / Petri Net Theory](#petri网理论--petri-net-theory)
   - [📚 **概述 / Overview**](#-概述--overview)
-  - [📑 **目录 / Table of Contents**s](#-目录--table-of-contentss)
+  - [📑 **目录 / Table of Contents**](#-目录--table-of-contents)
   - [1. Petri网基础 / Petri Net Fundamentals](#1-petri网基础--petri-net-fundamentals)
     - [1.1 Petri网的定义](#11-petri网的定义)
     - [1.2 Petri网的图形表示](#12-petri网的图形表示)
