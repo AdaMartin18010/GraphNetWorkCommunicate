@@ -6,6 +6,15 @@
 
 ---
 
+## 📑 **目录 / Table of Contents**
+
+- [层次Petri网（Hierarchical Petri Net） / Hierarchical Petri Net](#层次petri网hierarchical-petri-net--hierarchical-petri-net)
+  - [📚 **概述 / Overview**](#-概述--overview)
+  - [📑 **目录 / Table of Contents**](#-目录--table-of-contents)
+  - [1. 层次Petri网 / Hierarchical Petri Net](#1-层次petri网--hierarchical-petri-net)
+
+---
+
 ## 1. 层次Petri网 / Hierarchical Petri Net
 
 层次Petri网允许将子网作为抽象变迁，支持分层建模和模块化设计。

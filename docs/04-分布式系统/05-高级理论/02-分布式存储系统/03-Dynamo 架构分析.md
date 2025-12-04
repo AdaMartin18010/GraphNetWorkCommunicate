@@ -10,6 +10,14 @@
 
 ---
 
+## 📑 **目录 / Table of Contents**
+
+- [Dynamo / Dynamo](#dynamo--dynamo)
+  - [📚 **概述 / Overview**](#-概述--overview)
+  - [📑 **目录 / Table of Contents**](#-目录--table-of-contents)
+  - [Dynamo 架构分析](#dynamo-架构分析)
+
+---
 
 ## Dynamo 架构分析
 
@@ -190,7 +198,7 @@ class DynamoRing:
 # add_node: O(virtual_nodes * log(nodes))
 # get_nodes_for_key: O(nodes)
 # put/get: O(replicas)
-
+```
 
 ---
 

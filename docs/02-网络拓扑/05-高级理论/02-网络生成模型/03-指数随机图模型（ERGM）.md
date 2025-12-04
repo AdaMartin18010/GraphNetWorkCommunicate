@@ -10,6 +10,15 @@
 
 ---
 
+## 📑 **目录 / Table of Contents**
+
+- [指数随机图模型（ERGM） / 指数随机图模型（ERGM）](#指数随机图模型ergm--指数随机图模型ergm)
+  - [📚 **概述 / Overview**](#-概述--overview)
+  - [📑 **目录 / Table of Contents**](#-目录--table-of-contents)
+  - [指数随机图模型（ERGM）](#指数随机图模型ergm)
+
+---
+
 ## 指数随机图模型（ERGM）
 
 **定义 5.2.5** (指数随机图模型 / Exponential Random Graph Model)

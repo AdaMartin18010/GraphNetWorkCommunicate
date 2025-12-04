@@ -6,6 +6,16 @@
 
 ---
 
+## 📑 **目录 / Table of Contents**
+
+- [Petri网作为有向二分图 / Petri Nets as Directed Bipartite Graphs](#petri网作为有向二分图--petri-nets-as-directed-bipartite-graphs)
+  - [📚 **概述 / Overview**](#-概述--overview)
+  - [📑 **目录 / Table of Contents**](#-目录--table-of-contents)
+  - [🔧 **核心内容 / Core Content**](#-核心内容--core-content)
+  - [📐 **形式化定义 / Formal Definition**](#-形式化定义--formal-definition)
+
+---
+
 ## 🔧 **核心内容 / Core Content**
 
 - Petri网的有向二分图结构

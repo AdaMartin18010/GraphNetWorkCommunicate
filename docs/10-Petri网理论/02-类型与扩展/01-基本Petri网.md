@@ -6,6 +6,15 @@
 
 ---
 
+## 📑 **目录 / Table of Contents**
+
+- [基本Petri网（Place/Transition Net） / Basic Petri Net](#基本petri网placetransition-net--basic-petri-net)
+  - [📚 **概述 / Overview**](#-概述--overview)
+  - [📑 **目录 / Table of Contents**](#-目录--table-of-contents)
+  - [1. 基本Petri网定义 / Basic Petri Net Definition](#1-基本petri网定义--basic-petri-net-definition)
+
+---
+
 ## 1. 基本Petri网定义 / Basic Petri Net Definition
 
 基本Petri网就是定义 1.1 中定义的Petri网，也称为 **P/T网**（Place/Transition Net）。

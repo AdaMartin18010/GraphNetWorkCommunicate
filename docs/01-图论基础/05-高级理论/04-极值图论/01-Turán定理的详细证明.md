@@ -6,6 +6,16 @@
 
 ---
 
+## 📑 **目录 / Table of Contents**
+
+- [Turán定理的详细证明 / Detailed Proof of Turán's Theorem](#turán定理的详细证明--detailed-proof-of-turáns-theorem)
+  - [📚 **概述 / Overview**](#-概述--overview)
+  - [📑 **目录 / Table of Contents**](#-目录--table-of-contents)
+  - [📐 **定理表述 / Theorem Statement**](#-定理表述--theorem-statement)
+  - [🔬 **完整证明 / Complete Proof**](#-完整证明--complete-proof)
+
+---
+
 ## 📐 **定理表述 / Theorem Statement**
 
 ### 定理 5.4.1 (Turán定理 / Turán's Theorem)

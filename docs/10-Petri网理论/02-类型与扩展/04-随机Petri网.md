@@ -6,6 +6,15 @@
 
 ---
 
+## 📑 **目录 / Table of Contents**
+
+- [随机Petri网（Stochastic Petri Net） / Stochastic Petri Net](#随机petri网stochastic-petri-net--stochastic-petri-net)
+  - [📚 **概述 / Overview**](#-概述--overview)
+  - [📑 **目录 / Table of Contents**](#-目录--table-of-contents)
+  - [1. 随机Petri网定义 / Stochastic Petri Net Definition](#1-随机petri网定义--stochastic-petri-net-definition)
+
+---
+
 ## 1. 随机Petri网定义 / Stochastic Petri Net Definition
 
 **定义 2.3** (随机Petri网 / Stochastic Petri Net)

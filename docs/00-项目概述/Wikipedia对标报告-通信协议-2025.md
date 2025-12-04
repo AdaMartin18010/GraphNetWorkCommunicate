@@ -58,6 +58,7 @@
 > The Open Systems Interconnection model (OSI model) is a conceptual model that characterizes and standardizes the communication functions of a telecommunication or computing system without regard to its underlying internal structure and technology.
 
 **七层结构**:
+
 1. Physical Layer
 2. Data Link Layer
 3. Network Layer
@@ -106,4 +107,3 @@
 **报告版本**: v1.0
 **创建时间**: 2025年1月
 **最后更新**: 2025年1月
-

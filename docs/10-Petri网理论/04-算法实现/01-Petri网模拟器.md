@@ -6,6 +6,16 @@
 
 ---
 
+## 📑 **目录 / Table of Contents**
+
+- [Petri网模拟器 / Petri Net Simulator](#petri网模拟器--petri-net-simulator)
+  - [📚 **概述 / Overview**](#-概述--overview)
+  - [📑 **目录 / Table of Contents**](#-目录--table-of-contents)
+  - [🔧 **功能特性 / Features**](#-功能特性--features)
+  - [💻 **算法实现 / Implementation**](#-算法实现--implementation)
+
+---
+
 ## 🔧 **功能特性 / Features**
 
 - Petri网状态表示和初始化

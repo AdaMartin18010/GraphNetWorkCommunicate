@@ -6,6 +6,17 @@
 
 ---
 
+## 📑 **目录 / Table of Contents**
+
+- [Petri网的定义 / Petri Net Definition](#petri网的定义--petri-net-definition)
+  - [📚 **概述 / Overview**](#-概述--overview)
+  - [📑 **目录 / Table of Contents**](#-目录--table-of-contents)
+  - [1. Petri网的定义 / Petri Net Definition](#1-petri网的定义--petri-net-definition)
+    - [1.1 基本Petri网 / Basic Petri Net](#11-基本petri网--basic-petri-net)
+    - [1.2 前集和后集 / Pre-set and Post-set](#12-前集和后集--pre-set-and-post-set)
+
+---
+
 ## 1. Petri网的定义 / Petri Net Definition
 
 ### 1.1 基本Petri网 / Basic Petri Net

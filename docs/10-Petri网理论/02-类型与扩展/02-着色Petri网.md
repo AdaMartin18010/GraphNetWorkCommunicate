@@ -6,6 +6,15 @@
 
 ---
 
+## 📑 **目录 / Table of Contents**
+
+- [着色Petri网（Colored Petri Net） / Colored Petri Net](#着色petri网colored-petri-net--colored-petri-net)
+  - [📚 **概述 / Overview**](#-概述--overview)
+  - [📑 **目录 / Table of Contents**](#-目录--table-of-contents)
+  - [1. 着色Petri网定义 / Colored Petri Net Definition](#1-着色petri网定义--colored-petri-net-definition)
+
+---
+
 ## 1. 着色Petri网定义 / Colored Petri Net Definition
 
 **定义 2.1** (着色Petri网 / Colored Petri Net)

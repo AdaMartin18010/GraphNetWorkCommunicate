@@ -6,6 +6,16 @@
 
 ---
 
+## 📑 **目录 / Table of Contents**
+
+- [König定理的完整证明 / Complete Proof of König's Theorem](#könig定理的完整证明--complete-proof-of-königs-theorem)
+  - [📚 **概述 / Overview**](#-概述--overview)
+  - [📑 **目录 / Table of Contents**](#-目录--table-of-contents)
+  - [📐 **定理表述 / Theorem Statement**](#-定理表述--theorem-statement)
+  - [🔬 **完整证明 / Complete Proof**](#-完整证明--complete-proof)
+
+---
+
 ## 📐 **定理表述 / Theorem Statement**
 
 ### 定理 5.3.1 (König定理 / König's Theorem)
