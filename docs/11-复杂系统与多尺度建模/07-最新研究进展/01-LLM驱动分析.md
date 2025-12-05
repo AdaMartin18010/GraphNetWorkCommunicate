@@ -12,7 +12,12 @@
   - [📚 **概述 / Overview**](#-概述--overview)
   - [📑 **目录 / Table of Contents**](#-目录--table-of-contents)
   - [🚀 **最新进展 / Latest Progress**](#-最新进展--latest-progress)
+    - [1. 系统文本挖掘](#1-系统文本挖掘)
+    - [2. 系统解释](#2-系统解释)
   - [💻 **算法实现 / Algorithm Implementation**](#-算法实现--algorithm-implementation)
+    - [算法 6.1.1 (LLM驱动的复杂系统分析 / LLM-driven Complex System Analysis)](#算法-611-llm驱动的复杂系统分析--llm-driven-complex-system-analysis)
+  - [📊 **复杂度分析 / Complexity Analysis**](#-复杂度分析--complexity-analysis)
+  - [🔗 **相关链接 / Related Links**](#-相关链接--related-links)
 
 ---
 

@@ -13,6 +13,9 @@
   - [📑 **目录 / Table of Contents**](#-目录--table-of-contents)
   - [🔧 **核心内容 / Core Content**](#-核心内容--core-content)
   - [📐 **形式化定义 / Formal Definition**](#-形式化定义--formal-definition)
+    - [定理 5.1 (Petri网是有向二分图)](#定理-51-petri网是有向二分图)
+    - [证明](#证明)
+  - [🔗 **相关链接 / Related Links**](#-相关链接--related-links)
 
 ---
 

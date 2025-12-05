@@ -16,9 +16,19 @@
   - [📚 **概述 / Overview**](#-概述--overview)
   - [📑 **目录 / Table of Contents**](#-目录--table-of-contents)
   - [1. 形式化定义 / Formal Definition](#1-形式化定义--formal-definition)
+    - [定义 1.1 (Petri网化简 / Petri Net Reduction)](#定义-11-petri网化简--petri-net-reduction)
+    - [定义 1.2 (保持性质 / Property Preservation)](#定义-12-保持性质--property-preservation)
   - [2. 化简规则 / Reduction Rules](#2-化简规则--reduction-rules)
+    - [规则 2.1 (融合库所规则 / Place Fusion Rule)](#规则-21-融合库所规则--place-fusion-rule)
+    - [规则 2.2 (融合变迁规则 / Transition Fusion Rule)](#规则-22-融合变迁规则--transition-fusion-rule)
+    - [规则 2.3 (删除冗余库所规则 / Redundant Place Removal Rule)](#规则-23-删除冗余库所规则--redundant-place-removal-rule)
+    - [算法 2.1 (Petri网化简)](#算法-21-petri网化简)
   - [3. 化简算法 / Reduction Algorithms](#3-化简算法--reduction-algorithms)
+    - [算法 3.1 (状态空间约简)](#算法-31-状态空间约简)
   - [4. 应用场景 / Application Scenarios](#4-应用场景--application-scenarios)
+    - [4.1 状态空间爆炸问题](#41-状态空间爆炸问题)
+    - [4.2 模型理解](#42-模型理解)
+    - [4.3 性能优化](#43-性能优化)
   - [🔗 **相关链接 / Related Links**](#-相关链接--related-links)
 
 ---
@@ -51,6 +61,7 @@ $$N \models \phi \iff N' \models \phi$$
 **规则**: 如果两个库所 $p_1$ 和 $p_2$ 具有相同的前集和后集，可以合并为一个库所。
 
 **条件**:
+
 - $\prescript{}{}{p_1} = \prescript{}{}{p_2}$
 - $p_1^{\bullet} = p_2^{\bullet}$
 
@@ -59,6 +70,7 @@ $$N \models \phi \iff N' \models \phi$$
 **规则**: 如果两个变迁 $t_1$ 和 $t_2$ 具有相同的前集和后集，可以合并为一个变迁。
 
 **条件**:
+
 - $\prescript{}{}{t_1} = \prescript{}{}{t_2}$
 - $t_1^{\bullet} = t_2^{\bullet}$
 
