@@ -16,10 +16,6 @@
   - [📚 **概述 / Overview**](#-概述--overview)
   - [📑 **目录 / Table of Contents**](#-目录--table-of-contents)
   - [Cassandra 架构分析](#cassandra-架构分析)
-- [复杂度分析](#复杂度分析)
-- [add\_node: O(log(nodes))](#add_node-olognodes)
-- [get\_replica\_nodes: O(nodes)](#get_replica_nodes-onodes)
-- [put: O(replication\_factor)](#put-oreplication_factor)
 
 ---
 
@@ -139,7 +135,7 @@ class CassandraCluster:
 # add_node: O(log(nodes))
 # get_replica_nodes: O(nodes)
 # put: O(replication_factor)
-
+````
 
 ---
 
