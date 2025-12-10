@@ -71,17 +71,17 @@
 
 | **行业领域** | **Petri网应用深度** | **动态图论应用深度** | **拓扑模型应用深度** | **统一工具链** | **代表公司/项目** |
 |--------------|---------------------|----------------------|----------------------|----------------|-------------------|
-| **操作系统内核** | ★★★★★<br>进程调度、死锁预防 | ★★☆☆☆<br>锁依赖图动态分析 | ★★★☆☆<br>内核数据结构同调检测 | VeriSoft, Spin | Linux Kernel (LockDoc), Microsoft Singularity |
-| **分布式系统** | ★★★★★<br>共识协议、Raft/Paxos形式化 | ★★★★★<br>集群拓扑、服务依赖图 | ★★★☆☆<br>网络韧性、容错模式 | TLA+, PlusCal | HashiCorp Consul, Kubernetes (etcd), Apache ZooKeeper |
-| **云计算/微服务** | ★★★★☆<br>工作流编排（AWS Step Functions） | ★★★★★<br>服务网格、调用链路追踪 | ★★☆☆☆<br>微服务架构熵评估 | Apache Airflow, Temporal | Netflix Conductor, Istio, Dapr |
-| **数据库系统** | ★★★★☆<br>事务模型（2PL, MVCC） | ★★★★☆<br>查询计划图、事务依赖图 | ★★☆☆☆<br>数据血缘拓扑 | PostgreSQL, Neo4j | CockroachDB (Spanner协议), TigerGraph |
-| **AI/ML基础设施** | ★★★☆☆<br>ML pipeline工作流 | ★★★★★<br>GNN、计算图、消息传递 | ★★★★★<br>拓扑数据分析(TDA)、持续同调 | PyTorch, DGL | Google TensorFlow, PyTorch Geometric, Giotto-AI |
-| **网络安全** | ★★★★☆<br>访问控制模型（RBAC）、入侵检测 | ★★★★★<br>攻击图、威胁狩猎 | ★★★☆☆<br>异常检测（拓扑签名） | Splunk, ELK | CrowdStrike, Darktrace, MITRE ATT&CK |
-| **区块链/Web3** | ★★★★★<br>智能合约形式验证、UTXO模型 | ★★★★☆<br>交易图分析、DeFi依赖 | ★★★☆☆<br>共识网络拓扑韧性 | Solidity, Move | Ethereum, Solana (Sealevel), Polkadot (Substrate) |
-| **硬件设计** | ★★★★★<br>数字电路（异步电路、时序逻辑） | ★★★☆☆<br>片上网络(NoC)路由 | ★★★★☆<br>量子线路拓扑纠错 | Verilog, VHDL | Intel (x86微架构), IBM (量子计算), Xilinx (FPGA) |
-| **DevOps/CI-CD** | ★★★★★<br>Jenkins pipeline、GitLab CI | ★★★★☆<br>构建依赖图、部署拓扑 | ★☆☆☆☆<br>架构腐化检测 | Jenkins, ArgoCD | GitHub Actions, Azure DevOps |
-| **编程语言理论** | ★★★★★<br>并发语义（CSP, Actor）、类型系统 | ★★★☆☆<br>依赖图、模块演化 | ★★★★★<br>同伦类型论(HoTT)、形式化验证 | Coq, Agda, Rust | Mozilla (Rust borrow checker), Microsoft (F*) |
-| **量子计算** | ★★★☆☆<br>量子电路门序列 | ★★★☆☆<br>量子纠错码图（Surface Code） | ★★★★★<br>拓扑量子计算（任意子） | Qiskit, Cirq | IonQ, IBM Quantum, Microsoft Azure Quantum |
+| **操作系统内核** | ★★★★★ 进程调度、死锁预防 | ★★☆☆☆ 锁依赖图动态分析 | ★★★☆☆ 内核数据结构同调检测 | VeriSoft, Spin | Linux Kernel (LockDoc), Microsoft Singularity |
+| **分布式系统** | ★★★★★ 共识协议、Raft/Paxos形式化 | ★★★★★ 集群拓扑、服务依赖图 | ★★★☆☆ 网络韧性、容错模式 | TLA+, PlusCal | HashiCorp Consul, Kubernetes (etcd), Apache ZooKeeper |
+| **云计算/微服务** | ★★★★☆ 工作流编排（AWS Step Functions） | ★★★★★ 服务网格、调用链路追踪 | ★★☆☆☆ 微服务架构熵评估 | Apache Airflow, Temporal | Netflix Conductor, Istio, Dapr |
+| **数据库系统** | ★★★★☆ 事务模型（2PL, MVCC） | ★★★★☆ 查询计划图、事务依赖图 | ★★☆☆☆ 数据血缘拓扑 | PostgreSQL, Neo4j | CockroachDB (Spanner协议), TigerGraph |
+| **AI/ML基础设施** | ★★★☆☆ ML pipeline工作流 | ★★★★★ GNN、计算图、消息传递 | ★★★★★ 拓扑数据分析(TDA)、持续同调 | PyTorch, DGL | Google TensorFlow, PyTorch Geometric, Giotto-AI |
+| **网络安全** | ★★★★☆ 访问控制模型（RBAC）、入侵检测 | ★★★★★ 攻击图、威胁狩猎 | ★★★☆☆ 异常检测（拓扑签名） | Splunk, ELK | CrowdStrike, Darktrace, MITRE ATT&CK |
+| **区块链/Web3** | ★★★★★ 智能合约形式验证、UTXO模型 | ★★★★☆ 交易图分析、DeFi依赖 | ★★★☆☆ 共识网络拓扑韧性 | Solidity, Move | Ethereum, Solana (Sealevel), Polkadot (Substrate) |
+| **硬件设计** | ★★★★★ 数字电路（异步电路、时序逻辑） | ★★★☆☆ 片上网络(NoC)路由 | ★★★★☆ 量子线路拓扑纠错 | Verilog, VHDL | Intel (x86微架构), IBM (量子计算), Xilinx (FPGA) |
+| **DevOps/CI-CD** | ★★★★★ Jenkins pipeline、GitLab CI | ★★★★☆ 构建依赖图、部署拓扑 | ★☆☆☆☆ 架构腐化检测 | Jenkins, ArgoCD | GitHub Actions, Azure DevOps |
+| **编程语言理论** | ★★★★★ 并发语义（CSP, Actor）、类型系统 | ★★★☆☆ 依赖图、模块演化 | ★★★★★ 同伦类型论(HoTT)、形式化验证 | Coq, Agda, Rust | Mozilla (Rust borrow checker), Microsoft (F*) |
+| **量子计算** | ★★★☆☆ 量子电路门序列 | ★★★☆☆ 量子纠错码图（Surface Code） | ★★★★★ 拓扑量子计算（任意子） | Qiskit, Cirq | IonQ, IBM Quantum, Microsoft Azure Quantum |
 
 ### 1.2 技术栈穿透图（Stack Penetration）
 

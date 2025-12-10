@@ -1,6 +1,64 @@
-# **工程级梳理：图算法、Petri网算法决策树、拓扑分析OTLP**
+# 工程级梳理：图算法、Petri网算法决策树、拓扑分析OTLP / Engineering-Level Analysis: Graph Algorithms, Petri Net Algorithm Decision Trees, Topological Analysis with OTLP
 
-## **一、图算法全面梳理：工业级分类与实现**
+## 📚 **概述 / Overview**
+
+**文档目的**: 提供工程级的算法梳理、决策树和拓扑分析实现，涵盖图算法、Petri网算法和基于OTLP的拓扑分析。
+
+**核心主题**:
+
+- 图算法全面梳理：工业级分类与实现
+- Petri网算法决策树：工业级选择
+- 拓扑分析OTLP：信号采样工程实现
+- 工业选择的铁律
+
+**主要内容**:
+
+- 6大类图算法（连通性、最短路径、网络流、社区发现、图嵌入、动态图）
+- 4类Petri网算法决策树（死锁检测、性能分析、动态监控、工作流设计）
+- OTLP协议与拓扑分析的工程实现
+- 实时拓扑监控架构
+
+**适用对象**: 系统工程师、算法工程师、DevOps工程师、SRE
+
+---
+
+## 📋 **目录 / Table of Contents**
+
+- [工程级梳理：图算法、Petri网算法决策树、拓扑分析OTLP / Engineering-Level Analysis: Graph Algorithms, Petri Net Algorithm Decision Trees, Topological Analysis with OTLP](#工程级梳理图算法petri网算法决策树拓扑分析otlp--engineering-level-analysis-graph-algorithms-petri-net-algorithm-decision-trees-topological-analysis-with-otlp)
+  - [📚 **概述 / Overview**](#-概述--overview)
+  - [📋 **目录 / Table of Contents**](#-目录--table-of-contents)
+  - [🔗 **一、图算法全面梳理：工业级分类与实现 / Part 1: Graph Algorithms - Industrial Classification and Implementation**](#-一图算法全面梳理工业级分类与实现--part-1-graph-algorithms---industrial-classification-and-implementation)
+    - [**1.1 连通性算法（Connectivity Algorithms）**](#11-连通性算法connectivity-algorithms)
+    - [**1.2 最短路径算法（Shortest Path）**](#12-最短路径算法shortest-path)
+    - [**1.3 网络流算法（Network Flow）**](#13-网络流算法network-flow)
+    - [**1.4 社区发现与聚类（Community Detection）**](#14-社区发现与聚类community-detection)
+    - [**1.5 图嵌入与GNN（Graph Embedding）**](#15-图嵌入与gnngraph-embedding)
+    - [**1.6 动态图算法（Dynamic Graph）**](#16-动态图算法dynamic-graph)
+  - [🔀 **二、Petri网算法决策树：工业级选择 / Part 2: Petri Net Algorithm Decision Trees**](#-二petri网算法决策树工业级选择--part-2-petri-net-algorithm-decision-trees)
+    - [**2.1 根节点决策：系统建模目标**](#21-根节点决策系统建模目标)
+    - [**2.2 分支1：死锁检测决策树**](#22-分支1死锁检测决策树)
+    - [**2.3 分支2：性能分析决策树**](#23-分支2性能分析决策树)
+    - [**2.4 分支3：动态监控决策树**](#24-分支3动态监控决策树)
+    - [**2.5 分支4：工作流设计决策树**](#25-分支4工作流设计决策树)
+  - [📊 **三、拓扑分析OTLP：信号采样工程实现 / Part 3: Topological Analysis with OTLP**](#-三拓扑分析otlp信号采样工程实现--part-3-topological-analysis-with-otlp)
+    - [**3.1 OTLP协议与图信号映射**](#31-otlp协议与图信号映射)
+    - [**3.2 基于拓扑的采样算法（Topological Sampling）**](#32-基于拓扑的采样算法topological-sampling)
+    - [**3.3 拓扑特征提取流水线（Topological Feature Extraction Pipeline）**](#33-拓扑特征提取流水线topological-feature-extraction-pipeline)
+    - [**3.4 实时拓扑监控架构（Real-time Topology Monitoring Architecture）**](#34-实时拓扑监控架构real-time-topology-monitoring-architecture)
+  - [📋 **四、总结：工业选择的铁律 / Part 4: Summary - Industrial Selection Principles**](#-四总结工业选择的铁律--part-4-summary---industrial-selection-principles)
+    - [**4.1 图算法铁律**](#41-图算法铁律)
+    - [**4.2 Petri网铁律**](#42-petri网铁律)
+    - [**4.3 OTLP拓扑铁律**](#43-otlp拓扑铁律)
+  - [🗺️ **五、思维表征工具 / Part 5: Thinking Representation Tools**](#️-五思维表征工具--part-5-thinking-representation-tools)
+    - [**5.1 已包含的思维表征工具**](#51-已包含的思维表征工具)
+  - [📚 **六、参考文档 / Part 6: Reference Documents**](#-六参考文档--part-6-reference-documents)
+    - [**6.1 内部参考文档**](#61-内部参考文档)
+    - [**6.2 外部权威来源**](#62-外部权威来源)
+    - [**6.3 工业工具文档**](#63-工业工具文档)
+
+---
+
+## 🔗 **一、图算法全面梳理：工业级分类与实现 / Part 1: Graph Algorithms - Industrial Classification and Implementation**
 
 ### **1.1 连通性算法（Connectivity Algorithms）**
 
@@ -111,7 +169,7 @@
 
 ---
 
-## **二、Petri网算法决策树：工业级选择**
+## 🔀 **二、Petri网算法决策树：工业级选择 / Part 2: Petri Net Algorithm Decision Trees**
 
 ### **2.1 根节点决策：系统建模目标**
 
@@ -254,7 +312,7 @@
 
 ---
 
-## **三、拓扑分析OTLP：信号采样工程实现**
+## 📊 **三、拓扑分析OTLP：信号采样工程实现 / Part 3: Topological Analysis with OTLP**
 
 ### **3.1 OTLP协议与图信号映射**
 
@@ -352,7 +410,7 @@ OTLP消息结构 → 动态图构建
               }
               ```
 
----
+```
 
 ### **3.3 拓扑特征提取流水线（Topological Feature Extraction Pipeline）**
 
@@ -431,6 +489,7 @@ OTLP消息结构 → 动态图构建
 ```
 
 **采样成本分析**:
+
 - **头部采样10%**: 流量↓90%，保留**枢纽服务**（度>100）→ **H₀准确**
 - **尾部采样桥边**: 额外保留**5%关键边** → **H₁准确**
 - **总采样率**: 实际约**12%** → **成本可控**
@@ -438,28 +497,78 @@ OTLP消息结构 → 动态图构建
 
 ---
 
-## **四、总结：工业选择的铁律**
+## 📋 **四、总结：工业选择的铁律 / Part 4: Summary - Industrial Selection Principles**
 
-### **图算法铁律**
+### **4.1 图算法铁律**
+
 1. **能用BFS/DFS解决的，绝不碰Dijkstra**（复杂度O(V+E) vs O(E log V)）
 2. **能用Union-Find解决的，绝不Tarjan**（O(α(V)) vs O(V+E)）
 3. **GNN训练前，务必先Node2Vec快速摸底**（无监督验证图质量）
 
-### **Petri网铁律**
+### **4.2 Petri网铁律**
+
 1. **必须先用Rank定理检查有界性**（O(|P|³)），无界=不可用
 2. **死锁检测规模>100组件 → 用图论近似**（Tarjan），牺牲100%保证换取可计算
 3. **WF-net声音性用Woflan，别手写**（CNF爆炸）
 
-### **OTLP拓扑铁律**
+### **4.3 OTLP拓扑铁律**
+
 1. **头部采样保H₀，尾部采样保H₁**——两者结合保整体
 2. **β₁ > 5作为架构腐化告警阈值**（Netflix实践）
 3. **持久性 > 1分钟的环才是真环**，短暂环是噪声
 
----
-
 **务实落地清单**：
+
 - **下周**: 用`networkx.strongly_connected_components()`检查你的依赖图
 - **下月**: 在K8s中部署OpenTelemetry Collector，配置头采样10%
 - **下季度**: 用GUDHI计算β₁，设置Grafana告警
 
 这就是**从数学到代码的完整路径**，**无隐喻，无爽文，只有可运行的命令和可量化的ROI**。
+
+---
+
+## 🗺️ **五、思维表征工具 / Part 5: Thinking Representation Tools**
+
+### **5.1 已包含的思维表征工具**
+
+本文档已包含以下思维表征工具：
+
+1. **图算法决策树**（第1部分各小节）
+2. **Petri网算法决策树**（第2部分）
+3. **OTLP拓扑采样流程图**（第3部分）
+
+更多思维表征工具参见：[View文件夹思维表征工具集](./View文件夹思维表征工具集-2025.md)
+
+---
+
+## 📚 **六、参考文档 / Part 6: Reference Documents**
+
+### **6.1 内部参考文档**
+
+- [View文件夹全面梳理计划](./View文件夹全面梳理计划-2025.md)
+- [View文件夹主题索引](./View文件夹主题索引-2025.md)
+- [View文件夹概念定义清单](./View文件夹概念定义清单-2025.md)
+- [View文件夹概念关系网络](./View文件夹概念关系网络-2025.md)
+- [View文件夹对比矩阵集](./View文件夹对比矩阵集-2025.md)
+- [View文件夹思维表征工具集](./View文件夹思维表征工具集-2025.md)
+
+### **6.2 外部权威来源**
+
+- [Wikipedia: Graph algorithms](https://en.wikipedia.org/wiki/Category:Graph_algorithms)
+- [Wikipedia: Petri net analysis](https://en.wikipedia.org/wiki/Petri_net#Analysis)
+- [OpenTelemetry Documentation](https://opentelemetry.io/docs/)
+
+### **6.3 工业工具文档**
+
+- NetworkX Documentation
+- igraph Documentation
+- GUDHI Documentation
+- CPN Tools Documentation
+
+---
+
+**文档版本**: v2.0（统一结构版）
+**创建时间**: 2025年1月
+**最后更新**: 2025年1月
+**维护者**: GraphNetWorkCommunicate项目组
+**状态**: ✅ 文档结构已统一，内容完整，思维表征工具已集成
