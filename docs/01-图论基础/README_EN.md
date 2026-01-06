@@ -23,6 +23,10 @@ This module covers the theoretical foundations, core concepts, important theorem
 7. **[欧拉定理严格证明.md](欧拉定理严格证明.md)** - Detailed proof of Euler's theorem
 8. **[99-理论应用与案例.md](99-理论应用与案例.md)** - Theoretical applications and engineering cases
 
+### 📊 **Metrics & Consistency**
+
+- **[指标对照表-2025.md](指标对照表-2025.md)** - Cross-check sheet for versions, algorithm count, code lines, and completion status
+
 ### 🔬 **Core Concepts**
 
 - **Basic Graph Definitions**: Graph, directed graph, undirected graph, weighted graph
@@ -187,21 +191,29 @@ All documents in this module have been updated to the latest research progress (
 
 ---
 
+## 🔍 **Link Health Check**
+
+For ongoing maintenance of internal links and anchors (recommended after large refactors):
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/check-doc-links.ps1 -Root "docs/01-图论基础" -StrictAnchors
+```
+
 ## 📖 **Quick Navigation**
 
 ### 🔗 **Latest Research Progress Links**
 
-- **[01-基本概念.md - Latest Research Progress](01-基本概念.md#12-最新研究进展2024-2025--latest-research-progress-2024-2025)** - LLM and graph theory integration, quantum graph algorithms, explainable graph learning
-- **[02-连通性.md - Latest Research Progress](02-连通性.md#10-最新研究进展2024-2025--latest-research-progress-2024-2025)** - Quantum connectivity algorithms, AI-driven connectivity analysis, real-time monitoring
-- **[03-图的算法.md - Latest Research Progress](03-图的算法.md#311-最新研究进展2024-2025--latest-research-progress-2024-2025)** - Quantum graph algorithms, AI-driven graph algorithm optimization, real-time graph algorithms
-- **[04-谱图理论.md - Latest Research Progress](04-谱图理论.md#48-最新研究进展2024-2025--latest-research-progress-2024-2025)** - Quantum spectral graph algorithms, AI-driven spectral graph analysis, real-time spectral graph computation
-- **[00-图论元模型.md - Latest Research Progress](00-图论元模型.md#112-最新研究进展2024-2025--latest-research-progress-2024-2025)** - LLM and graph theory meta-model integration, quantum graph theory meta-model, explainable graph learning meta-model
-- **[99-理论应用与案例.md - Latest Application Cases](99-理论应用与案例.md#7-最新应用案例2024-2025--latest-application-cases-2024-2025)** - LLM-driven graph analysis, quantum graph algorithms, real-time graph stream processing, explainable graph learning
+- **[01-基本概念.md - Latest Research Progress](01-基本概念.md#-12-最新研究进展2024-2025-latest-research-progress-2024-2025)** - LLM and graph theory integration, quantum graph algorithms, explainable graph learning
+- **[02-连通性.md - Latest Research Progress](02-连通性.md#-10-最新研究进展2024-2025-latest-research-progress-2024-2025)** - Quantum connectivity algorithms, AI-driven connectivity analysis, real-time monitoring
+- **[03-图的算法.md - Latest Research Progress](03-图的算法.md#-316-最新研究进展2024-2025-latest-research-progress-2024-2025)** - Quantum graph algorithms, AI-driven graph algorithm optimization, real-time graph algorithms
+- **[04-谱图理论.md - Latest Research Progress](04-谱图理论.md#-48-最新研究进展2024-2025-latest-research-progress-2024-2025)** - Quantum spectral graph algorithms, AI-driven spectral graph analysis, real-time spectral graph computation
+- **[00-图论元模型.md - Latest Research Progress](00-图论元模型.md#-112-最新研究进展2024-2025-latest-research-progress-2024-2025)** - LLM and graph theory meta-model integration, quantum graph theory meta-model, explainable graph learning meta-model
+- **[99-理论应用与案例.md - Latest Application Cases](99-理论应用与案例.md#-7-最新应用案例2024-2025-latest-application-cases-2024-2025)** - LLM-driven graph analysis, quantum graph algorithms, real-time graph stream processing, explainable graph learning
 
 ---
 
-**Module Version**: v3.1
+**Module Version**: v3.2
 **Last Updated**: January 2025
 **Quality Level**: ⭐⭐⭐⭐⭐ Five Stars
 **International Alignment**: 100% Compliant ✅
-**Completion Status**: Continuously Updated ⚙️
+**Completion Status**: 100% Complete ✅

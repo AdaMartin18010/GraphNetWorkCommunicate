@@ -2,6 +2,22 @@
 
 ## 📋 脚本列表
 
+### 0. check-doc-links.ps1
+
+**用途**: 校验 Markdown 文档内的本地链接健康度（目标文件是否存在、锚点是否可定位）。
+
+**使用方法**:
+
+```powershell
+# 校验 docs/01-图论基础（文件链接 + 文件内锚点）
+powershell -ExecutionPolicy Bypass -File scripts/check-doc-links.ps1 -Root "docs/01-图论基础" -StrictAnchors
+```
+
+**说明**:
+
+- 默认会检查 `(.md)` 与 `(.md#anchor)` 链接是否有效
+- `-StrictAnchors` 额外校验文档内 `(#anchor)` 形式的锚点
+
 ### 1. mark-pending-files.ps1
 
 **用途**: 为所有待完善文件添加标记
