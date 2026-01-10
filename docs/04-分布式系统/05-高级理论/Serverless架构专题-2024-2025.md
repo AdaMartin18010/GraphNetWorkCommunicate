@@ -18,30 +18,46 @@
 
 ## 📑 **目录 / Table of Contents**
 
-- [一、Serverless架构基础回顾](#一serverless架构基础回顾--serverless-architecture-fundamentals-review)
-  - [1.1 什么是Serverless？](#11-什么是serverless)
-  - [1.2 Serverless的优势](#12-serverless的优势)
-  - [1.3 形式化定义与理论基础](#13-形式化定义与理论基础)
-- [二、AWS Lambda](#二aws-lambda--aws-lambda)
-  - [2.1 Lambda架构](#21-lambda架构)
-  - [2.2 Lambda函数设计](#22-lambda函数设计)
-  - [2.3 2024-2025最新进展](#23-2024-2025最新进展)
-- [三、Azure Functions](#三azure-functions--azure-functions)
-  - [3.1 Functions架构](#31-functions架构)
-  - [3.2 函数设计模式](#32-函数设计模式)
-  - [3.3 2024-2025最新进展](#33-2024-2025最新进展)
-- [四、Serverless框架](#四serverless框架--serverless-frameworks)
-  - [4.1 Serverless Framework](#41-serverless-framework)
-  - [4.2 其他框架](#42-其他框架)
-  - [4.3 2024-2025最新进展](#43-2024-2025最新进展)
-- [五、Serverless与分布式系统](#五serverless与分布式系统--serverless-and-distributed-systems)
-  - [5.1 Serverless编排](#51-serverless编排)
-  - [5.2 Serverless存储](#52-serverless存储)
-  - [5.3 2024-2025最新进展](#53-2024-2025最新进展)
-- [六、应用场景与案例](#六应用场景与案例--applications-and-cases)
-- [七、最新研究论文总结](#七最新研究论文总结--latest-research-papers-summary)
-- [八、未来研究方向](#八未来研究方向--future-research-directions)
-- [九、总结](#九总结--summary)
+- [Serverless架构专题 - 2024-2025最新研究 / Serverless Architecture Special Topic - Latest Research 2024-2025](#serverless架构专题---2024-2025最新研究--serverless-architecture-special-topic---latest-research-2024-2025)
+  - [📚 **概述 / Overview**](#-概述--overview)
+  - [📑 **目录 / Table of Contents**](#-目录--table-of-contents)
+  - [🎯 **一、Serverless架构基础回顾 / Serverless Architecture Fundamentals Review**](#-一serverless架构基础回顾--serverless-architecture-fundamentals-review)
+    - [1.1 什么是Serverless？](#11-什么是serverless)
+    - [1.2 Serverless的优势](#12-serverless的优势)
+      - [1.2.1 成本优势](#121-成本优势)
+      - [1.2.2 运维优势](#122-运维优势)
+    - [1.3 形式化定义与理论基础](#13-形式化定义与理论基础)
+      - [1.3.1 Serverless的数学定义](#131-serverless的数学定义)
+  - [☁️ **二、AWS Lambda / AWS Lambda**](#️-二aws-lambda--aws-lambda)
+    - [2.1 Lambda架构](#21-lambda架构)
+    - [2.2 Lambda函数设计](#22-lambda函数设计)
+    - [2.3 2024-2025最新进展](#23-2024-2025最新进展)
+      - [2.3.1 Lambda SnapStart](#231-lambda-snapstart)
+  - [🔷 **三、Azure Functions / Azure Functions**](#-三azure-functions--azure-functions)
+    - [3.1 Functions架构](#31-functions架构)
+    - [3.2 函数设计模式](#32-函数设计模式)
+  - [🛠️ **四、Serverless框架 / Serverless Frameworks**](#️-四serverless框架--serverless-frameworks)
+    - [4.1 Serverless Framework](#41-serverless-framework)
+    - [4.2 其他框架](#42-其他框架)
+  - [🔗 **五、Serverless与分布式系统 / Serverless and Distributed Systems**](#-五serverless与分布式系统--serverless-and-distributed-systems)
+    - [5.1 Serverless编排](#51-serverless编排)
+    - [5.2 Serverless存储](#52-serverless存储)
+  - [📊 **六、应用场景与案例 / Applications and Cases**](#-六应用场景与案例--applications-and-cases)
+    - [6.1 应用场景](#61-应用场景)
+      - [6.1.1 API后端](#611-api后端)
+      - [6.1.2 数据处理](#612-数据处理)
+    - [6.2 实际案例](#62-实际案例)
+      - [案例1: Serverless API后端](#案例1-serverless-api后端)
+      - [案例2: Serverless数据处理](#案例2-serverless数据处理)
+      - [案例3: Serverless图像处理](#案例3-serverless图像处理)
+    - [6.3 案例总结](#63-案例总结)
+  - [📚 **七、最新研究论文总结 / Latest Research Papers Summary**](#-七最新研究论文总结--latest-research-papers-summary)
+    - [7.1 2024-2025年重要论文](#71-2024-2025年重要论文)
+  - [🎯 **八、未来研究方向 / Future Research Directions**](#-八未来研究方向--future-research-directions)
+    - [8.1 研究方向](#81-研究方向)
+  - [📝 **九、总结 / Summary**](#-九总结--summary)
+    - [9.1 核心贡献](#91-核心贡献)
+    - [9.2 关键挑战](#92-关键挑战)
 
 ---
 
@@ -91,6 +107,7 @@ F: \mathcal{I} \to \mathcal{O}
 $$
 
 其中：
+
 - $\mathcal{I}$ 是输入空间
 - $\mathcal{O}$ 是输出空间
 - 函数在Serverless平台上按需执行
@@ -104,6 +121,7 @@ $$
 $$
 
 其中：
+
 - $P$ 是平台
 - $S$ 是存储
 - $E$ 是执行引擎
