@@ -14,7 +14,7 @@
 
 - [通信协议与Petri网理论的关系 / Relationship between Communication Protocols and Petri Net Theory](#通信协议与petri网理论的关系--relationship-between-communication-protocols-and-petri-net-theory)
   - [📚 **概述 / Overview**](#-概述--overview)
-  - [� **目录 / Table of Contents**](#-目录--table-of-contents)
+  - [📑 **目录 / Table of Contents**](#-目录--table-of-contents)
   - [📐 **理论基础 / Theoretical Foundation**](#-理论基础--theoretical-foundation)
     - [定义 6.1.1 (协议状态机 / Protocol State Machine)](#定义-611-协议状态机--protocol-state-machine)
     - [定义 6.1.2 (协议Petri网模型 / Protocol Petri Net Model)](#定义-612-协议petri网模型--protocol-petri-net-model)
