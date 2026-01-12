@@ -14,6 +14,9 @@
   - [📚 **概述 / Overview**](#-概述--overview)
   - [📑 **目录 / Table of Contents**](#-目录--table-of-contents)
   - [0. 历史背景与发展 / Historical Background and Development](#0-历史背景与发展--historical-background-and-development)
+    - [0.1 着色Petri网的提出 / The Introduction of Colored Petri Nets](#01-着色petri网的提出--the-introduction-of-colored-petri-nets)
+    - [0.2 发展动机 / Development Motivation](#02-发展动机--development-motivation)
+    - [0.3 影响与意义 / Impact and Significance](#03-影响与意义--impact-and-significance)
   - [1. 着色Petri网定义 / Colored Petri Net Definition](#1-着色petri网定义--colored-petri-net-definition)
     - [1.1 形式化定义 / Formal Definition](#11-形式化定义--formal-definition)
     - [1.2 颜色集与类型系统 / Color Sets and Type System](#12-颜色集与类型系统--color-sets-and-type-system)
@@ -45,6 +48,7 @@
     - [7.1 案例1：通信协议建模 / Case 1: Communication Protocol Modeling](#71-案例1通信协议建模--case-1-communication-protocol-modeling)
     - [7.2 案例2：工作流管理系统 / Case 2: Workflow Management System](#72-案例2工作流管理系统--case-2-workflow-management-system)
     - [7.3 案例3：分布式数据库系统 / Case 3: Distributed Database System](#73-案例3分布式数据库系统--case-3-distributed-database-system)
+  - [📚 **参考文献 / References**](#-参考文献--references)
 
 ---
 

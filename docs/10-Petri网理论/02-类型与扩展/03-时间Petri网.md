@@ -14,6 +14,9 @@
   - [📚 **概述 / Overview**](#-概述--overview)
   - [📑 **目录 / Table of Contents**](#-目录--table-of-contents)
   - [0. 历史背景与发展 / Historical Background and Development](#0-历史背景与发展--historical-background-and-development)
+    - [0.1 时间Petri网的提出 / The Introduction of Timed Petri Nets](#01-时间petri网的提出--the-introduction-of-timed-petri-nets)
+    - [0.2 发展动机 / Development Motivation](#02-发展动机--development-motivation)
+    - [0.3 影响与意义 / Impact and Significance](#03-影响与意义--impact-and-significance)
   - [1. 时间Petri网定义 / Timed Petri Net Definition](#1-时间petri网定义--timed-petri-net-definition)
     - [1.1 形式化定义 / Formal Definition](#11-形式化定义--formal-definition)
     - [1.2 时间区间 / Time Intervals](#12-时间区间--time-intervals)
@@ -36,7 +39,7 @@
     - [5.2 与随机Petri网的对比 / Comparison with Stochastic Petri Nets](#52-与随机petri网的对比--comparison-with-stochastic-petri-nets)
     - [5.3 与着色Petri网的对比 / Comparison with Colored Petri Nets](#53-与着色petri网的对比--comparison-with-colored-petri-nets)
   - [6. 应用场景 / Application Scenarios](#6-应用场景--application-scenarios)
-    - [6.1 实时系统建模 / Real-Time System Modeling](#61-实时系统建模--real-time-system-modeling)
+    - [6.1 实时系统建模 / Real-Time Task Scheduling](#61-实时系统建模--real-time-task-scheduling)
     - [6.2 调度系统建模 / Scheduling System Modeling](#62-调度系统建模--scheduling-system-modeling)
     - [6.3 制造系统建模 / Manufacturing System Modeling](#63-制造系统建模--manufacturing-system-modeling)
     - [6.4 通信协议建模 / Communication Protocol Modeling](#64-通信协议建模--communication-protocol-modeling)
@@ -48,6 +51,7 @@
     - [8.1 案例1：实时任务调度 / Case 1: Real-Time Task Scheduling](#81-案例1实时任务调度--case-1-real-time-task-scheduling)
     - [8.2 案例2：制造系统建模 / Case 2: Manufacturing System Modeling](#82-案例2制造系统建模--case-2-manufacturing-system-modeling)
     - [8.3 案例3：通信协议建模 / Case 3: Communication Protocol Modeling](#83-案例3通信协议建模--case-3-communication-protocol-modeling)
+  - [📚 **参考文献 / References**](#-参考文献--references)
 
 ---
 

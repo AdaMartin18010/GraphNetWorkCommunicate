@@ -38,12 +38,19 @@
     - [算法 6.1.3 (系统行为解释生成 / System Behavior Explanation Generation)](#算法-613-系统行为解释生成--system-behavior-explanation-generation)
     - [算法 6.1.4 (多模态系统分析 / Multimodal System Analysis)](#算法-614-多模态系统分析--multimodal-system-analysis)
   - [📊 **复杂度分析 / Complexity Analysis**](#-复杂度分析--complexity-analysis)
+    - [算法 6.1.1 (LLM驱动的复杂系统分析)](#算法-611-llm驱动的复杂系统分析)
+    - [算法 6.1.2 (系统知识图谱构建)](#算法-612-系统知识图谱构建)
+    - [算法 6.1.3 (系统行为解释生成)](#算法-613-系统行为解释生成)
+    - [算法 6.1.4 (多模态系统分析)](#算法-614-多模态系统分析)
   - [💼 **实际应用案例 / Real-World Applications**](#-实际应用案例--real-world-applications)
     - [案例1: LLM辅助的生态系统分析](#案例1-llm辅助的生态系统分析)
     - [案例2: 自动构建金融系统知识图谱](#案例2-自动构建金融系统知识图谱)
     - [案例3: 交通系统行为解释生成](#案例3-交通系统行为解释生成)
   - [🔬 **技术挑战与未来方向 / Technical Challenges and Future Directions**](#-技术挑战与未来方向--technical-challenges-and-future-directions)
+    - [技术挑战](#技术挑战)
+    - [未来方向](#未来方向)
   - [🔗 **相关链接 / Related Links**](#-相关链接--related-links)
+  - [🔗 **相关链接 / Related Links**](#-相关链接--related-links-1)
 
 ---
 

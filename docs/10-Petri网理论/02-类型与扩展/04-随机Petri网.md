@@ -14,6 +14,9 @@
   - [📚 **概述 / Overview**](#-概述--overview)
   - [📑 **目录 / Table of Contents**](#-目录--table-of-contents)
   - [0. 历史背景与发展 / Historical Background and Development](#0-历史背景与发展--historical-background-and-development)
+    - [0.1 随机Petri网的提出 / The Introduction of Stochastic Petri Nets](#01-随机petri网的提出--the-introduction-of-stochastic-petri-nets)
+    - [0.2 发展动机 / Development Motivation](#02-发展动机--development-motivation)
+    - [0.3 影响与意义 / Impact and Significance](#03-影响与意义--impact-and-significance)
   - [1. 随机Petri网定义 / Stochastic Petri Net Definition](#1-随机petri网定义--stochastic-petri-net-definition)
     - [1.1 形式化定义 / Formal Definition](#11-形式化定义--formal-definition)
     - [1.2 触发率函数 / Firing Rate Function](#12-触发率函数--firing-rate-function)
@@ -54,6 +57,7 @@
     - [9.1 案例1：服务器性能分析 / Case 1: Server Performance Analysis](#91-案例1服务器性能分析--case-1-server-performance-analysis)
     - [9.2 案例2：制造系统可靠性评估 / Case 2: Manufacturing System Reliability Evaluation](#92-案例2制造系统可靠性评估--case-2-manufacturing-system-reliability-evaluation)
     - [9.3 案例3：通信网络性能分析 / Case 3: Communication Network Performance Analysis](#93-案例3通信网络性能分析--case-3-communication-network-performance-analysis)
+  - [📚 **参考文献 / References**](#-参考文献--references)
 
 ---
 

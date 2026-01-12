@@ -16,6 +16,9 @@
   - [📚 **概述 / Overview**](#-概述--overview)
   - [📑 **目录 / Table of Contents**](#-目录--table-of-contents)
   - [0. 历史背景与发展 / Historical Background and Development](#0-历史背景与发展--historical-background-and-development)
+    - [0.1 层次Petri网的提出 / The Introduction of Hierarchical Petri Nets](#01-层次petri网的提出--the-introduction-of-hierarchical-petri-nets)
+    - [0.2 发展动机 / Development Motivation](#02-发展动机--development-motivation)
+    - [0.3 影响与意义 / Impact and Significance](#03-影响与意义--impact-and-significance)
   - [1. 层次Petri网定义 / Hierarchical Petri Net Definition](#1-层次petri网定义--hierarchical-petri-net-definition)
     - [1.1 形式化定义 / Formal Definition](#11-形式化定义--formal-definition)
     - [1.2 层次结构 / Hierarchical Structure](#12-层次结构--hierarchical-structure)
@@ -49,6 +52,7 @@
     - [8.1 案例1：工作流管理系统 / Case 1: Workflow Management System](#81-案例1工作流管理系统--case-1-workflow-management-system)
     - [8.2 案例2：分布式系统设计 / Case 2: Distributed System Design](#82-案例2分布式系统设计--case-2-distributed-system-design)
     - [8.3 案例3：制造系统建模 / Case 3: Manufacturing System Modeling](#83-案例3制造系统建模--case-3-manufacturing-system-modeling)
+  - [📚 **参考文献 / References**](#-参考文献--references)
 
 ---
 
