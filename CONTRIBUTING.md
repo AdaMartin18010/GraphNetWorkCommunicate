@@ -49,11 +49,13 @@ GraphNetWorkCommunicate是一个**理论梳理与认知归纳项目**，专注�
 ### 2.2 贡献流程
 
 1. **Fork项目**
+
    ```bash
    git clone https://github.com/your-username/GraphNetWorkCommunicate.git
    ```
 
 2. **创建分支**
+
    ```bash
    git checkout -b feature/your-feature-name
    ```

@@ -38,11 +38,17 @@
     - [算法 7.1.3 (LLM增强的GNN / LLM-Enhanced GNN)](#算法-713-llm增强的gnn--llm-enhanced-gnn)
     - [算法 7.1.4 (知识图谱增强的LLM / Knowledge Graph-Enhanced LLM)](#算法-714-知识图谱增强的llm--knowledge-graph-enhanced-llm)
   - [📊 **复杂度分析 / Complexity Analysis**](#-复杂度分析--complexity-analysis)
+    - [算法 7.1.1 (Graph-LLM融合模型)](#算法-711-graph-llm融合模型)
+    - [算法 7.1.2 (图-文本联合编码器)](#算法-712-图-文本联合编码器)
+    - [算法 7.1.3 (LLM增强的GNN)](#算法-713-llm增强的gnn)
+    - [算法 7.1.4 (知识图谱增强的LLM)](#算法-714-知识图谱增强的llm)
   - [💼 **实际应用案例 / Real-World Applications**](#-实际应用案例--real-world-applications)
     - [案例1: 知识图谱增强的问答系统](#案例1-知识图谱增强的问答系统)
     - [案例2: 图结构理解的智能助手](#案例2-图结构理解的智能助手)
     - [案例3: 多模态图推荐系统](#案例3-多模态图推荐系统)
   - [🔬 **技术挑战与未来方向 / Technical Challenges and Future Directions**](#-技术挑战与未来方向--technical-challenges-and-future-directions)
+    - [技术挑战](#技术挑战)
+    - [未来方向](#未来方向)
   - [🔗 **相关链接 / Related Links**](#-相关链接--related-links)
 
 ---
