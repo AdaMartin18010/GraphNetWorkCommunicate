@@ -47,25 +47,25 @@ class KnowledgeGraphQA:
     """
     知识图谱增强问答系统
     """
-    
+
     def __init__(self):
         self.kg = KnowledgeGraph()
         self.llm = LLMModel()
         self.fusion = GraphLLMFusion()
-    
+
     def answer(self, question: str) -> str:
         """
         回答问题
         """
         # 1. 从知识图谱检索相关实体和关系
         kg_context = self.kg.retrieve(question)
-        
+
         # 2. Graph-LLM融合
         fused_emb = self.fusion.fuse(kg_context, question)
-        
+
         # 3. LLM生成答案
         answer = self.llm.generate(fused_emb)
-        
+
         return answer
 ```
 
@@ -104,25 +104,25 @@ class GraphUnderstandingAssistant:
     """
     图结构理解智能助手
     """
-    
+
     def __init__(self):
         self.gnn = GraphNeuralNetwork()
         self.llm = LLMModel()
         self.got = GraphOfThought()
-    
+
     def understand(self, graph: Graph) -> str:
         """
         理解图结构
         """
         # 1. GNN编码图结构
         graph_emb = self.gnn.encode(graph)
-        
+
         # 2. Graph-of-Thought推理
         reasoning_path = self.got.reason(graph_emb)
-        
+
         # 3. LLM生成自然语言描述
         description = self.llm.generate(reasoning_path)
-        
+
         return description
 ```
 
@@ -161,13 +161,13 @@ class MultimodalGraphRecommendation:
     """
     多模态图推荐系统
     """
-    
+
     def __init__(self):
         self.text_encoder = TextEncoder()
         self.image_encoder = ImageEncoder()
         self.graph_encoder = GraphEncoder()
         self.fusion = MultimodalFusion()
-    
+
     def recommend(self, user_id: int, context: Dict) -> List[int]:
         """
         推荐
@@ -176,13 +176,13 @@ class MultimodalGraphRecommendation:
         text_emb = self.text_encoder(context['text'])
         image_emb = self.image_encoder(context['image'])
         graph_emb = self.graph_encoder(context['graph'])
-        
+
         # 2. 多模态融合
         fused_emb = self.fusion.fuse(text_emb, image_emb, graph_emb)
-        
+
         # 3. 推荐
         recommendations = self._recommend(user_id, fused_emb)
-        
+
         return recommendations
 ```
 
@@ -223,27 +223,27 @@ class AdaptiveGNN:
     """
     自适应图神经网络
     """
-    
+
     def __init__(self):
         self.graph_learner = AdaptiveGraphLearner()
         self.gnn_layers = AdaptiveGNNLayers()
         self.attention = AdaptiveAttention()
-    
+
     def forward(self, graph: Graph, features: Tensor) -> Tensor:
         """
         前向传播
         """
         # 1. 自适应图结构学习
         adapted_graph = self.graph_learner.adapt(graph, features)
-        
+
         # 2. 自适应GNN层
         x = features
         for layer in self.gnn_layers:
             x = layer(x, adapted_graph)
-        
+
         # 3. 自适应注意力
         output = self.attention(x, adapted_graph)
-        
+
         return output
 ```
 
@@ -284,12 +284,12 @@ class StreamingGNN:
     """
     流式图神经网络
     """
-    
+
     def __init__(self):
         self.graph_buffer = GraphBuffer()
         self.incremental_learner = IncrementalLearner()
         self.real_time_inference = RealTimeInference()
-    
+
     def process_stream(self, graph_updates: List[GraphUpdate]):
         """
         处理流式图更新
@@ -297,15 +297,15 @@ class StreamingGNN:
         for update in graph_updates:
             # 1. 更新图缓冲区
             self.graph_buffer.update(update)
-            
+
             # 2. 增量学习
             self.incremental_learner.update(update)
-            
+
             # 3. 实时推理
             predictions = self.real_time_inference.infer(
                 self.graph_buffer.get_current_graph()
             )
-            
+
             yield predictions
 ```
 
@@ -330,16 +330,16 @@ graph TD
     A[AI网络应用需求] --> B{需要图-文本融合?}
     B -->|是| C{需要知识图谱?}
     B -->|否| D{需要自适应网络?}
-    
+
     C -->|是| E[Graph-LLM融合<br/>知识图谱增强]
     C -->|否| F[Graph-LLM融合<br/>图结构理解]
-    
+
     D -->|是| G[自适应AI网络<br/>自适应GNN]
     D -->|否| H{需要实时处理?}
-    
+
     H -->|是| I[实时AI网络优化<br/>流式GNN]
     H -->|否| J[多模态图学习<br/>多模态融合]
-    
+
     E --> K[推荐: GL-Fusion/GLTW]
     F --> L[推荐: Graph-of-Thought]
     G --> M[推荐: AdaptiveGNN]
