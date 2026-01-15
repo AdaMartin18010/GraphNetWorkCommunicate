@@ -7,6 +7,7 @@
 Petri网与图论的关系是Petri网理论的基础之一。理解这种关系不仅有助于深入理解Petri网的本质，也为应用图论方法解决Petri网问题提供了理论基础。
 
 本文档包括：
+
 - Petri网作为有向二分图的形式化定义和证明
 - 二分图性质在Petri网中的应用
 - 图论算法在Petri网分析中的实现
@@ -92,6 +93,7 @@ Petri网 $N = (P, T, F, W, M_0)$ 的底层结构是一个**有向二分图**（D
 $$G = (V, E) = (P \cup T, F)$$
 
 其中：
+
 - $P$ 和 $T$ 是 $V$ 的一个**二分划分**（Bipartition）
 - $\forall (u, v) \in F$，要么 $(u \in P \land v \in T)$，要么 $(u \in T \land v \in P)$
 
@@ -103,6 +105,7 @@ $$G = (V, E) = (P \cup T, F)$$
 2. **流关系约束**：$F \subseteq (P \times T) \cup (T \times P)$（流关系只连接库所和变迁）
 
 因此，$G = (P \cup T, F)$ 满足二分图的所有条件：
+
 - 顶点集 $V = P \cup T$ 可以划分为两个不相交的集合 $P$ 和 $T$
 - 所有边 $e \in F$ 都连接 $P$ 和 $T$ 之间的顶点
 
@@ -113,10 +116,12 @@ $$G = (V, E) = (P \cup T, F)$$
 **定义 1.1** (有向二分图 / Directed Bipartite Graph)
 
 一个有向图 $G = (V, E)$ 是**有向二分图**，如果存在 $V$ 的一个划分 $V = V_1 \cup V_2$，使得：
+
 - $V_1 \cap V_2 = \emptyset$
 - $\forall (u, v) \in E$，要么 $(u \in V_1 \land v \in V_2)$，要么 $(u \in V_2 \land v \in V_1)$
 
 在Petri网中：
+
 - $V_1 = P$（库所集）
 - $V_2 = T$（变迁集）
 
