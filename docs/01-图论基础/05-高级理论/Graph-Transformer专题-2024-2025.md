@@ -3680,11 +3680,13 @@ class ImplicitGNNLayer(nn.Module):
 **论文**: "Learning Graph Structure for Graph Neural Networks" (NeurIPS 2024)
 
 **核心创新**:
+
 - **可学习图结构**: 端到端学习最优图结构
 - **结构优化**: 联合优化图结构和GNN参数
 - **性能提升**: 在多个任务上显著提升性能
 
 **技术要点**:
+
 - 使用可微分的图结构学习
 - 基于注意力的边权重学习
 - 稀疏图结构正则化
@@ -3694,6 +3696,7 @@ class ImplicitGNNLayer(nn.Module):
 **论文**: "Contrastive Graph Learning with Adaptive Augmentation" (NeurIPS 2024)
 
 **核心创新**:
+
 - **自适应增强**: 自适应图数据增强策略
 - **对比学习**: 改进的对比学习框架
 - **性能**: 在节点分类和图分类任务上提升10-15%
@@ -3703,6 +3706,7 @@ class ImplicitGNNLayer(nn.Module):
 **论文**: "Generalization Bounds for Graph Neural Networks" (NeurIPS 2024)
 
 **核心创新**:
+
 - **泛化界**: 提供GNN的泛化误差界
 - **理论分析**: 连接图结构和泛化能力
 - **指导意义**: 指导模型设计和训练
@@ -3716,6 +3720,7 @@ class ImplicitGNNLayer(nn.Module):
 **论文**: "Optimization Theory for Graph Neural Networks" (ICML 2025)
 
 **核心创新**:
+
 - **收敛性分析**: GNN训练的收敛性保证
 - **优化算法**: 专门设计的优化算法
 - **理论保证**: 提供理论性能保证
@@ -3725,6 +3730,7 @@ class ImplicitGNNLayer(nn.Module):
 **论文**: "Efficient Processing of Large-Scale Graphs with GNNs" (ICML 2025)
 
 **核心创新**:
+
 - **采样策略**: 高效图采样方法
 - **近似算法**: 近似GNN计算
 - **可扩展性**: 支持数十亿节点的大规模图
@@ -3734,6 +3740,7 @@ class ImplicitGNNLayer(nn.Module):
 **论文**: "Robustness of Graph Neural Networks to Adversarial Attacks" (ICML 2025)
 
 **核心创新**:
+
 - **对抗鲁棒性**: 提升GNN对对抗攻击的鲁棒性
 - **防御方法**: 新的防御策略
 - **理论分析**: 鲁棒性的理论分析
@@ -3743,6 +3750,7 @@ class ImplicitGNNLayer(nn.Module):
 **论文**: "Explainable Graph Neural Networks" (ICML 2025)
 
 **核心创新**:
+
 - **可解释性方法**: 新的GNN解释方法
 - **注意力可视化**: 改进的注意力机制可视化
 - **子图重要性**: 识别重要子结构
@@ -3756,6 +3764,7 @@ class ImplicitGNNLayer(nn.Module):
 **论文**: "Expressive Power of Graph Neural Networks" (ICLR 2025)
 
 **核心创新**:
+
 - **表达能力分析**: 深入分析GNN的表达能力
 - **WL测试**: 与Weisfeiler-Lehman测试的关系
 - **架构设计**: 指导表达能力更强的架构设计
@@ -3765,6 +3774,7 @@ class ImplicitGNNLayer(nn.Module):
 **论文**: "Pre-training Graph Neural Networks" (ICLR 2025)
 
 **核心创新**:
+
 - **预训练策略**: 新的GNN预训练方法
 - **迁移学习**: 跨域迁移学习
 - **性能**: 在下游任务上显著提升
@@ -3774,6 +3784,7 @@ class ImplicitGNNLayer(nn.Module):
 **论文**: "Dynamic Graph Neural Networks for Temporal Graphs" (ICLR 2025)
 
 **核心创新**:
+
 - **时序建模**: 高效建模时序图
 - **动态更新**: 支持动态图更新
 - **应用**: 社交网络、推荐系统等
@@ -3808,12 +3819,12 @@ class ImplicitGNNLayer(nn.Module):
    - 泛化理论
    - 表达能力分析
 
-4. **高效和可扩展GNN**
+7. **高效和可扩展GNN**
    - 稀疏化技术（Unifews）
    - 非卷积架构（RUM）
    - 异步推理（Hogwild）
 
-5. **图基础模型**
+8. **图基础模型**
    - 子结构模式学习（GPM）
    - 跨图通用性（GIT）
 
@@ -3873,8 +3884,9 @@ class ImplicitGNNLayer(nn.Module):
 ### 7.3 2025年最新架构创新
 
 **1. DenseGNN for Materials Science**
+
 - **来源**: arxiv.org/abs/2501.03278
-- **核心创新**: 
+- **核心创新**:
   - Dense Connectivity Network (DCN)
   - Hierarchical Node-Edge-Graph Residual Networks (HRN)
   - Local Structure Order Parameters Embedding (LOPE)
@@ -3882,6 +3894,7 @@ class ImplicitGNNLayer(nn.Module):
 - **性能**: 超越之前GNN，接近X射线衍射方法精度
 
 **2. Hierarchical Uncertainty-Aware GNN (HU-GNN)**
+
 - **来源**: arxiv.org/abs/2504.19820
 - **核心创新**:
   - 多尺度表示学习与不确定性估计
@@ -3890,6 +3903,7 @@ class ImplicitGNNLayer(nn.Module):
 - **优势**: 在节点级和图级任务中实现最先进的鲁棒性和可解释性
 
 **3. Graph Neural Evolution (GNE)**
+
 - **来源**: arxiv.org/abs/2412.17629
 - **核心创新**:
   - GNN与进化算法的内在对偶性
@@ -3898,6 +3912,7 @@ class ImplicitGNNLayer(nn.Module):
 - **性能**: 在复杂景观和噪声环境中优于GA、DE、CMA-ES等算法
 
 **4. Dynamic Triangulation-Based Graph Rewiring (TRIGON)**
+
 - **来源**: arxiv.org/abs/2508.19071
 - **核心创新**:
   - 学习从多个图视图中选择相关三角形
@@ -3921,47 +3936,47 @@ import torch.nn.functional as F
 class DenseGNN(nn.Module):
     """
     DenseGNN: 用于材料科学的通用可扩展架构
-    
+
     参考文献:
     - arxiv.org/abs/2501.03278 (2025)
-    
+
     核心组件:
     1. Dense Connectivity Network (DCN)
     2. Hierarchical Node-Edge-Graph Residual Networks (HRN)
     3. Local Structure Order Parameters Embedding (LOPE)
     """
-    
-    def __init__(self, input_dim, hidden_dim, num_layers, 
+
+    def __init__(self, input_dim, hidden_dim, num_layers,
                  num_dense_blocks=4, dropout=0.1):
         super(DenseGNN, self).__init__()
         self.num_layers = num_layers
         self.num_dense_blocks = num_dense_blocks
-        
+
         # 输入投影
         self.input_proj = nn.Linear(input_dim, hidden_dim)
-        
+
         # Dense Connectivity Network (DCN)
         self.dcn_blocks = nn.ModuleList([
             DenseConnectivityBlock(hidden_dim, dropout)
             for _ in range(num_dense_blocks)
         ])
-        
+
         # Hierarchical Node-Edge-Graph Residual Networks (HRN)
         self.hrn_layers = nn.ModuleList([
             HRNLayer(hidden_dim, dropout)
             for _ in range(num_layers)
         ])
-        
+
         # Local Structure Order Parameters Embedding (LOPE)
         self.lope_encoder = LOPEEncoder(hidden_dim)
-        
+
         # 输出层
         self.output_layer = nn.Linear(hidden_dim, 1)
-        
+
     def forward(self, x, edge_index, edge_attr=None, batch=None):
         """
         前向传播
-        
+
         Args:
             x: 节点特征 [N, input_dim]
             edge_index: 边索引 [2, E]
@@ -3970,45 +3985,45 @@ class DenseGNN(nn.Module):
         """
         # 1. 输入投影
         h = self.input_proj(x)
-        
+
         # 2. Dense Connectivity Network
         dense_features = []
         for dcn_block in self.dcn_blocks:
             h = dcn_block(h, edge_index, edge_attr)
             dense_features.append(h)
-        
+
         # 3. 密集连接融合
         h = torch.cat(dense_features, dim=-1)
         h = F.linear(h, torch.randn(h.size(-1), self.hidden_dim))
-        
+
         # 4. Hierarchical Node-Edge-Graph Residual Networks
         for hrn_layer in self.hrn_layers:
             h = hrn_layer(h, edge_index, edge_attr)
-        
+
         # 5. Local Structure Order Parameters Embedding
         h = self.lope_encoder(h, edge_index)
-        
+
         # 6. 图级池化
         if batch is not None:
             graph_repr = global_mean_pool(h, batch)
         else:
             graph_repr = h.mean(dim=0)
-        
+
         # 7. 输出
         output = self.output_layer(graph_repr)
-        
+
         return output
 
 class DenseConnectivityBlock(nn.Module):
     """Dense Connectivity Block"""
-    
+
     def __init__(self, hidden_dim, dropout):
         super(DenseConnectivityBlock, self).__init__()
         self.conv1 = nn.Conv1d(hidden_dim, hidden_dim, 1)
         self.conv2 = nn.Conv1d(hidden_dim, hidden_dim, 1)
         self.dropout = nn.Dropout(dropout)
         self.norm = nn.LayerNorm(hidden_dim)
-        
+
     def forward(self, x, edge_index, edge_attr=None):
         # 密集连接操作
         x = x.unsqueeze(-1)  # [N, D, 1]
@@ -4021,7 +4036,7 @@ class DenseConnectivityBlock(nn.Module):
 
 class HRNLayer(nn.Module):
     """Hierarchical Node-Edge-Graph Residual Network Layer"""
-    
+
     def __init__(self, hidden_dim, dropout):
         super(HRNLayer, self).__init__()
         self.node_mlp = nn.Sequential(
@@ -4037,25 +4052,25 @@ class HRNLayer(nn.Module):
             nn.Linear(hidden_dim, hidden_dim)
         )
         self.norm = nn.LayerNorm(hidden_dim)
-        
+
     def forward(self, x, edge_index, edge_attr=None):
         # 节点级处理
         x_node = self.node_mlp(x)
-        
+
         # 边级处理
         row, col = edge_index
         edge_features = torch.cat([x[row], x[col]], dim=-1)
         edge_repr = self.edge_mlp(edge_features)
-        
+
         # 消息传递
         x = x + x_node
         x = self.norm(x)
-        
+
         return x
 
 class LOPEEncoder(nn.Module):
     """Local Structure Order Parameters Embedding"""
-    
+
     def __init__(self, hidden_dim):
         super(LOPEEncoder, self).__init__()
         self.encoder = nn.Sequential(
@@ -4063,7 +4078,7 @@ class LOPEEncoder(nn.Module):
             nn.ReLU(),
             nn.Linear(hidden_dim, hidden_dim)
         )
-        
+
     def forward(self, x, edge_index):
         # 局部结构顺序参数编码
         x = self.encoder(x)
@@ -4073,16 +4088,19 @@ class LOPEEncoder(nn.Module):
 #### 8.1.2 技术特点
 
 **Dense Connectivity Network (DCN)**:
+
 - 密集连接允许所有层之间的信息流动
 - 缓解梯度消失问题
 - 提高特征重用效率
 
 **Hierarchical Node-Edge-Graph Residual Networks (HRN)**:
+
 - 层次化处理节点、边和图级信息
 - 残差连接保持信息流
 - 多尺度特征融合
 
 **Local Structure Order Parameters Embedding (LOPE)**:
+
 - 编码局部结构顺序参数
 - 捕获晶体和分子的局部对称性
 - 提高结构区分能力
@@ -4090,6 +4108,7 @@ class LOPEEncoder(nn.Module):
 #### 8.1.3 应用案例
 
 **材料属性预测**:
+
 - 在JARVIS-DFT和QM9数据集上测试
 - 超越之前GNN的性能
 - 接近X射线衍射方法的精度
@@ -4104,34 +4123,34 @@ class LOPEEncoder(nn.Module):
 class HUGNN(nn.Module):
     """
     Hierarchical Uncertainty-Aware GNN (HU-GNN)
-    
+
     参考文献:
     - arxiv.org/abs/2504.19820 (2025)
-    
+
     核心创新:
     1. 多尺度表示学习
     2. 不确定性估计
     3. 自监督嵌入多样性
     """
-    
-    def __init__(self, input_dim, hidden_dim, num_layers, 
+
+    def __init__(self, input_dim, hidden_dim, num_layers,
                  num_scales=3, num_heads=8, dropout=0.1):
         super(HUGNN, self).__init__()
         self.num_scales = num_scales
         self.num_heads = num_heads
-        
+
         # 多尺度编码器
         self.scale_encoders = nn.ModuleList([
             nn.Linear(input_dim, hidden_dim)
             for _ in range(num_scales)
         ])
-        
+
         # 不确定性估计器
         self.uncertainty_estimators = nn.ModuleList([
             UncertaintyEstimator(hidden_dim)
             for _ in range(num_scales)
         ])
-        
+
         # 多尺度Transformer层
         self.scale_transformers = nn.ModuleList([
             nn.ModuleList([
@@ -4139,17 +4158,17 @@ class HUGNN(nn.Module):
                 for _ in range(num_layers)
             ]) for _ in range(num_scales)
         ])
-        
+
         # 跨尺度融合
         self.cross_scale_fusion = CrossScaleFusion(hidden_dim, num_scales)
-        
+
         # 输出层
         self.output_layer = nn.Linear(hidden_dim, 1)
-        
+
     def forward(self, x, edge_index, edge_attr=None, batch=None):
         """
         前向传播
-        
+
         Args:
             x: 节点特征
             edge_index: 边索引
@@ -4159,43 +4178,43 @@ class HUGNN(nn.Module):
         # 1. 多尺度编码
         scale_features = []
         scale_uncertainties = []
-        
+
         for scale_idx in range(self.num_scales):
             # 编码
             h_scale = self.scale_encoders[scale_idx](x)
-            
+
             # Transformer处理
             for transformer in self.scale_transformers[scale_idx]:
                 h_scale = transformer(h_scale, edge_index, edge_attr)
-            
+
             # 不确定性估计
             uncertainty = self.uncertainty_estimators[scale_idx](h_scale)
-            
+
             scale_features.append(h_scale)
             scale_uncertainties.append(uncertainty)
-        
+
         # 2. 跨尺度融合（考虑不确定性）
         h_fused = self.cross_scale_fusion(scale_features, scale_uncertainties)
-        
+
         # 3. 图级池化
         if batch is not None:
             graph_repr = global_mean_pool(h_fused, batch)
         else:
             graph_repr = h_fused.mean(dim=0)
-        
+
         # 4. 输出
         output = self.output_layer(graph_repr)
-        
+
         return output, scale_uncertainties
 
 class UncertaintyEstimator(nn.Module):
     """不确定性估计器"""
-    
+
     def __init__(self, hidden_dim):
         super(UncertaintyEstimator, self).__init__()
         self.mean_net = nn.Linear(hidden_dim, hidden_dim)
         self.var_net = nn.Linear(hidden_dim, hidden_dim)
-        
+
     def forward(self, x):
         mean = self.mean_net(x)
         var = F.softplus(self.var_net(x)) + 1e-6
@@ -4203,11 +4222,11 @@ class UncertaintyEstimator(nn.Module):
 
 class CrossScaleFusion(nn.Module):
     """跨尺度融合"""
-    
+
     def __init__(self, hidden_dim, num_scales):
         super(CrossScaleFusion, self).__init__()
         self.fusion_weights = nn.Parameter(torch.ones(num_scales) / num_scales)
-        
+
     def forward(self, scale_features, scale_uncertainties):
         # 基于不确定性的加权融合
         weights = []
@@ -4215,10 +4234,10 @@ class CrossScaleFusion(nn.Module):
             # 不确定性越小，权重越大
             weight = 1.0 / (uncertainty['var'].mean() + 1e-6)
             weights.append(weight)
-        
+
         weights = torch.stack(weights)
         weights = F.softmax(weights, dim=0)
-        
+
         # 加权融合
         fused = sum(w * feat for w, feat in zip(weights, scale_features))
         return fused
@@ -4227,16 +4246,19 @@ class CrossScaleFusion(nn.Module):
 #### 8.2.2 技术特点
 
 **多尺度表示学习**:
+
 - 在不同结构尺度上建模图
 - 自适应形成节点聚类
 - 捕获层次化结构信息
 
 **不确定性估计**:
+
 - 估计表示的不确定性
 - 指导鲁棒消息传递机制
 - 缓解噪声和对抗扰动
 
 **自监督嵌入多样性**:
+
 - 鼓励嵌入多样性
 - 提高表示质量
 - 增强泛化能力
@@ -4251,67 +4273,67 @@ class CrossScaleFusion(nn.Module):
 class GNE(nn.Module):
     """
     Graph Neural Evolution (GNE)
-    
+
     参考文献:
     - arxiv.org/abs/2412.17629 (2024)
-    
+
     核心创新:
     1. GNN与进化算法的内在对偶性
     2. 频域滤波器平衡全局探索和局部利用
     3. 将进化算法转化为可解释机制
     """
-    
+
     def __init__(self, input_dim, hidden_dim, num_layers,
                  population_size=100, mutation_rate=0.1):
         super(GNE, self).__init__()
         self.population_size = population_size
         self.mutation_rate = mutation_rate
-        
+
         # 编码器：将个体编码为图节点
         self.encoder = nn.Linear(input_dim, hidden_dim)
-        
+
         # 频域滤波器
         self.frequency_filters = nn.ModuleList([
             FrequencyFilter(hidden_dim)
             for _ in range(num_layers)
         ])
-        
+
         # 进化操作层
         self.evolution_layers = nn.ModuleList([
             EvolutionLayer(hidden_dim)
             for _ in range(num_layers)
         ])
-        
+
         # 解码器：将图节点解码为个体
         self.decoder = nn.Linear(hidden_dim, input_dim)
-        
+
     def forward(self, population, graph_structure):
         """
         前向传播
-        
+
         Args:
             population: 种群 [population_size, input_dim]
             graph_structure: 图结构（邻接矩阵或边索引）
         """
         # 1. 编码：将个体编码为图节点
         nodes = self.encoder(population)  # [population_size, hidden_dim]
-        
+
         # 2. 构建图
         edge_index = self._build_graph(graph_structure, nodes)
-        
+
         # 3. 进化过程
         for freq_filter, evo_layer in zip(self.frequency_filters, self.evolution_layers):
             # 频域滤波：平衡全局探索和局部利用
             nodes = freq_filter(nodes, edge_index)
-            
+
             # 进化操作：选择、交叉、变异
             nodes = evo_layer(nodes, edge_index)
-        
+
         # 4. 解码：将图节点解码为个体
         new_population = self.decoder(nodes)
-        
+
         return new_population
-    
+
     def _build_graph(self, graph_structure, nodes):
         """构建图结构"""
         # 根据节点相似度或预定义结构构建图
@@ -4321,63 +4343,66 @@ class GNE(nn.Module):
         else:
             # 边索引
             edge_index = graph_structure
-        
+
         return edge_index
 
 class FrequencyFilter(nn.Module):
     """频域滤波器"""
-    
+
     def __init__(self, hidden_dim):
         super(FrequencyFilter, self).__init__()
         self.low_pass = nn.Linear(hidden_dim, hidden_dim)
         self.high_pass = nn.Linear(hidden_dim, hidden_dim)
-        
+
     def forward(self, x, edge_index):
         # 低通滤波：局部利用
         x_low = self.low_pass(x)
-        
+
         # 高通滤波：全局探索
         x_high = self.high_pass(x)
-        
+
         # 融合
         x = x_low + 0.5 * x_high
         return x
 
 class EvolutionLayer(nn.Module):
     """进化操作层"""
-    
+
     def __init__(self, hidden_dim):
         super(EvolutionLayer, self).__init__()
         self.selection = SelectionOperator(hidden_dim)
         self.crossover = CrossoverOperator(hidden_dim)
         self.mutation = MutationOperator(hidden_dim)
-        
+
     def forward(self, nodes, edge_index):
         # 选择
         selected = self.selection(nodes, edge_index)
-        
+
         # 交叉
         crossed = self.crossover(selected, edge_index)
-        
+
         # 变异
         mutated = self.mutation(crossed)
-        
+
         return mutated
 ```
 
 #### 8.3.2 技术特点
 
 **GNN与进化算法的对偶性**:
+
 - 将个体建模为图中的节点
 - 进化操作转化为图操作
 - 提供可解释的进化机制
 
 **频域滤波器**:
+
 - 低通滤波：局部利用（exploitation）
 - 高通滤波：全局探索（exploration）
 - 平衡探索和利用
 
 **可解释性**:
+
 - 进化过程可视化
 - 理解选择、交叉、变异机制
 - 分析进化轨迹
@@ -4392,44 +4417,44 @@ class EvolutionLayer(nn.Module):
 class TRIGON(nn.Module):
     """
     Dynamic Triangulation-Based Graph Rewiring (TRIGON)
-    
+
     参考文献:
     - arxiv.org/abs/2508.19071 (2025)
-    
+
     核心创新:
     1. 学习从多个图视图中选择相关三角形
     2. 联合优化三角形选择和分类性能
     3. 构建丰富的非平面三角剖分
     """
-    
+
     def __init__(self, input_dim, hidden_dim, num_layers,
                  num_views=5, num_triangles=10):
         super(TRIGON, self).__init__()
         self.num_views = num_views
         self.num_triangles = num_triangles
-        
+
         # 多视图编码器
         self.view_encoders = nn.ModuleList([
             nn.Linear(input_dim, hidden_dim)
             for _ in range(num_views)
         ])
-        
+
         # 三角形选择器
         self.triangle_selector = TriangleSelector(hidden_dim, num_triangles)
-        
+
         # GNN层
         self.gnn_layers = nn.ModuleList([
             GCNLayer(hidden_dim, hidden_dim)
             for _ in range(num_layers)
         ])
-        
+
         # 分类器
         self.classifier = nn.Linear(hidden_dim, 1)
-        
+
     def forward(self, x, edge_index, edge_attr=None):
         """
         前向传播
-        
+
         Args:
             x: 节点特征 [N, input_dim]
             edge_index: 原始边索引 [2, E]
@@ -4440,55 +4465,55 @@ class TRIGON(nn.Module):
         for view_encoder in self.view_encoders:
             h_view = view_encoder(x)
             view_features.append(h_view)
-        
+
         # 2. 三角形选择
         selected_triangles, triangle_weights = self.triangle_selector(
             view_features, edge_index
         )
-        
+
         # 3. 构建重连图
         rewired_edge_index = self._build_rewired_graph(
             edge_index, selected_triangles, triangle_weights
         )
-        
+
         # 4. GNN处理
         h = view_features[0]  # 使用第一个视图作为初始特征
         for gnn_layer in self.gnn_layers:
             h = gnn_layer(h, rewired_edge_index, edge_attr)
-        
+
         # 5. 分类
         output = self.classifier(h)
-        
+
         return output, rewired_edge_index, selected_triangles
 
 class TriangleSelector(nn.Module):
     """三角形选择器"""
-    
+
     def __init__(self, hidden_dim, num_triangles):
         super(TriangleSelector, self).__init__()
         self.num_triangles = num_triangles
-        
+
         # 三角形编码器
         self.triangle_encoder = nn.Linear(hidden_dim * 3, hidden_dim)
-        
+
         # 选择网络
         self.selector = nn.Sequential(
             nn.Linear(hidden_dim, hidden_dim),
             nn.ReLU(),
             nn.Linear(hidden_dim, 1)
         )
-        
+
     def forward(self, view_features, edge_index):
         """
         选择相关三角形
-        
+
         Args:
             view_features: 多视图特征列表
             edge_index: 边索引
         """
         # 1. 从多个视图中提取三角形
         all_triangles = self._extract_triangles(view_features, edge_index)
-        
+
         # 2. 编码三角形
         triangle_encodings = []
         for triangle in all_triangles:
@@ -4500,18 +4525,18 @@ class TriangleSelector(nn.Module):
             ], dim=-1)
             encoding = self.triangle_encoder(triangle_feat)
             triangle_encodings.append(encoding)
-        
+
         triangle_encodings = torch.stack(triangle_encodings)
-        
+
         # 3. 选择top-k三角形
         scores = self.selector(triangle_encodings).squeeze(-1)
         top_k_indices = torch.topk(scores, self.num_triangles).indices
-        
+
         selected_triangles = [all_triangles[i] for i in top_k_indices]
         triangle_weights = scores[top_k_indices]
-        
+
         return selected_triangles, triangle_weights
-    
+
     def _extract_triangles(self, view_features, edge_index):
         """从图中提取三角形"""
         # 简化实现：从边索引中提取三角形
@@ -4523,16 +4548,19 @@ class TriangleSelector(nn.Module):
 #### 8.4.2 技术特点
 
 **动态三角剖分**:
+
 - 学习选择相关三角形
 - 构建丰富的非平面三角剖分
 - 改进图结构属性
 
 **联合优化**:
+
 - 同时优化三角形选择和分类性能
 - 端到端训练
 - 提高任务性能
 
 **结构改进**:
+
 - 减少图直径
 - 增加谱间隙
 - 提高图质量
