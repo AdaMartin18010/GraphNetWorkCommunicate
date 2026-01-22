@@ -253,9 +253,11 @@ This **2025-2026 Ultimate Standard** document provides the most comprehensive an
 **International Standard / 国际标准**:
 - AMS Notation: [AMS reference]
 - ISO 80000-2: [ISO reference]
-- Harvard Math 21b (2025-2026): [Course reference]
-- MIT 18.06 (2025-2026): [Course reference]
-- Stanford EE103 (2025-2026): [Course reference]
+- ACM Computing Classification: [ACM reference]
+- IEEE Standards: [IEEE reference]
+- MIT 6.042J (2025-2026): [Course reference]
+- Stanford CS224W (2025-2026): [Course reference]
+- CMU 15-445 (2025-2026): [Course reference]
 
 **Latest Research Reference (2025-2026) / 最新研究参考 (2025-2026)**: [Latest paper or preprint]
 ```
@@ -745,8 +747,8 @@ flowchart TD
 ✅ **Correct / 正确**:
 
 - `00-总览` / `00-Overview`
-- `04-数学/01-基础理论` / `04-Mathematics/01-Foundations`
-- `04-数学/02-核心概念/01-矩阵.md` / `04-Mathematics/02-Core-Concepts/01-Matrix.md`
+- `01-图论基础/01-基本概念` / `01-Graph-Theory-Foundations/01-Basic-Concepts`
+- `01-图论基础/01-基本概念/01-图的定义.md` / `01-Graph-Theory-Foundations/01-Basic-Concepts/01-Graph-Definition.md`
 
 ❌ **Incorrect / 错误**:
 
@@ -816,7 +818,7 @@ Main Folder (00-12)
 **Required Format / 必需格式**:
 
 - **Internal References / 内部引用**: `[Section Number / 章节编号](relative-path#anchor)`
-- **Example / 示例**: `[Definition 2.1 / 定义2.1](04-数学/02-核心概念/01-矩阵.md#21-topological-matrix--拓扑矩阵)`
+- **Example / 示例**: `[Definition 2.1 / 定义2.1](01-图论基础/01-基本概念/01-图的定义.md#21-graph-definition--图的定义)`
 
 **Consistency Requirements / 一致性要求**:
 
@@ -961,6 +963,6 @@ Main Folder (00-12)
 ---
 
 **Document Version / 文档版本**: 1.0
-**Last Updated / 最后更新**: 2025-01-XX
+**Last Updated / 最后更新**: 2026-01-22
 **Next Review / 下次审查**: 2026-01-XX
 **Status / 状态**: ⭐ **LATEST STANDARD / 最新标准**

@@ -33,6 +33,12 @@ This directory contains all template and standard files for the Graph Theory-Net
 - **`THEME_MAPPING_INDEX.md`** - 主题映射索引
 - **`THEME_ORGANIZATION_COMPLETE.md`** - 主题组织完整文档
 
+### 4. 工具与校验文件 / Tools and Validation
+
+- **`VALIDATION_CHECKLIST.md`** - 项目标准校验清单（包含11个核心模块的详细校验要求）
+- **`术语表-Glossary.md`** - 图论-网络-通信术语表（11个核心模块的完整术语）
+- **`推进工作总结-2026-01-22.md`** - 推进工作总结（记录已完成工作和后续建议）
+
 ---
 
 ## 🎯 使用指南 / Usage Guide
@@ -80,7 +86,7 @@ Each knowledge structure file must include the following 10 sections:
 
 ## 🔍 质量检查 / Quality Checklist
 
-- ✅ 包含"Latest Research Frontiers (2020-2025)"部分
+- ✅ 包含"Latest Research Frontiers (2025-2026)"部分
 - ✅ 包含5+实例（Examples）
 - ✅ 包含10个必需章节
 - ✅ 双语内容（English/Chinese）
@@ -90,5 +96,37 @@ Each knowledge structure file must include the following 10 sections:
 
 ---
 
-**最后更新**: 2025-01-XX
-**版本**: 1.0
+## 📚 推荐阅读顺序 / Recommended Reading Order
+
+### 首次使用 / First Time Users
+
+1. **`README.md`** - 本文档，了解目录结构
+2. **`THEME_HIERARCHY_MASTER.md`** - 主题层次结构主文档（必读）
+3. **`PROJECT_STANDARD_MASTER.md`** - 项目规范主文档（必读）
+4. **`2025_2026_ULTIMATE_STANDARD.md`** - 2025-2026终极标准（最新标准）
+
+### 创建新内容时 / When Creating New Content
+
+1. **`2025_2026_ULTIMATE_STANDARD.md`** - 参考最新标准
+2. **`CONTENT_ORGANIZATION_GUIDE.md`** - 内容组织指南
+3. **`THEME_HIERARCHY_MASTER.md`** - 确定主题归属
+4. **`术语表-Glossary.md`** - 使用标准术语
+
+### 质量检查时 / When Quality Checking
+
+1. **`VALIDATION_CHECKLIST.md`** - 项目标准校验清单
+2. **`2025_2026_ULTIMATE_STANDARD.md`** - 对照最新标准
+3. **`术语表-Glossary.md`** - 验证术语一致性
+
+---
+
+## 🔄 持续更新 / Continuous Updates
+
+- **推进工作总结**: 查看 `推进工作总结-2026-01-22.md` 了解最新进展
+- **定期审查**: 建议每月审查一次标准文档的一致性
+- **版本管理**: 所有文档使用版本号管理，重大变更会更新版本号
+
+---
+
+**最后更新**: 2026-01-22
+**版本**: 1.1

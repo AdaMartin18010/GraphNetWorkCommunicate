@@ -148,7 +148,7 @@ This glossary provides standardized English-Chinese terminology for the Graph Th
 ## 5. 分布式系统术语 / Distributed Systems Terminology
 
 | English / 英文 | Chinese / 中文 | 备注 / Notes |
-|:---|:---|:---|
+| :--- | :--- | :--- |
 | Distributed System | 分布式系统 | Standard / 标准 |
 | Concurrency | 并发性 | Standard / 标准 |
 | No Global Clock | 无全局时钟 | Standard / 标准 |
@@ -345,9 +345,9 @@ This glossary provides standardized English-Chinese terminology for the Graph Th
 
 ## 13. 更新记录 / Update Log
 
-**2025-01-XX**: 初始版本创建，从微积分术语表转换为图论-网络-通信术语表，包含11个核心模块的完整术语
+**2026-01-22**: 初始版本创建，从微积分术语表转换为图论-网络-通信术语表，包含11个核心模块的完整术语
 
-**Last Updated / 最后更新**: 2025-01-XX
+**Last Updated / 最后更新**: 2026-01-22
 **Version / 版本**: 2.0
 **Status / 状态**: ✅ Complete / 完成
 
