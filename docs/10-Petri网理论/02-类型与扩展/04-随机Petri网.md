@@ -135,6 +135,7 @@ $$SPN = (P, T, F, W, M_0, \Lambda)$$
 **触发率与平均触发时间的关系**：
 
 如果变迁 $t$ 的触发时间服从指数分布，参数为 $\Lambda(t)$，则：
+
 - **平均触发时间**（Mean Firing Time）：$E[T] = \frac{1}{\Lambda(t)}$
 - **触发时间方差**（Variance of Firing Time）：$\text{Var}[T] = \frac{1}{\Lambda(t)^2}$
 
@@ -203,6 +204,7 @@ $$P(t_i \text{ fires first}) = \frac{\Lambda(t_i)}{\sum_{j=1}^{k} \Lambda(t_j)}$
 **证明思路**：
 
 由于所有变迁的触发时间都服从指数分布，且相互独立，则：
+
 - 所有变迁中最早触发的时间 $T_{\min} = \min\{T_{t_1}, T_{t_2}, \ldots, T_{t_k}\}$ 也服从指数分布，参数为 $\sum_{j=1}^{k} \Lambda(t_j)$
 - 变迁 $t_i$ 最先触发的概率等于 $T_{t_i} < T_{t_j}$（对所有 $j \neq i$）的概率
 
