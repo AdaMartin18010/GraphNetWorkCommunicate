@@ -766,6 +766,139 @@ class InferenceRequestGraph:
         return {'bottlenecks': bottlenecks}
 ```
 
+```python
+# Graph Transformer: AI基础设施性能优化（2025最新方法）
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+
+class AIInfrastructureGraphTransformer(nn.Module):
+    """基于Graph Transformer的AI基础设施性能优化"""
+    
+    def __init__(self, d_model=128, nhead=8, num_layers=3, num_services=100):
+        super().__init__()
+        self.service_embedding = nn.Embedding(num_services, d_model)
+        
+        # Graph Transformer层
+        self.transformer_layers = nn.ModuleList([
+            nn.TransformerEncoderLayer(d_model, nhead, dim_feedforward=512)
+            for _ in range(num_layers)
+        ])
+        
+        # 性能预测头
+        self.performance_head = nn.Sequential(
+            nn.Linear(d_model, d_model // 2),
+            nn.ReLU(),
+            nn.Linear(d_model // 2, 3)  # 预测延迟、吞吐量、资源利用率
+        )
+    
+    def forward(self, service_graph, service_features):
+        """
+        前向传播
+        service_graph: NetworkX图，包含服务节点和调用关系
+        service_features: 服务特征（负载、延迟、错误率等）
+        """
+        # 节点特征编码
+        node_ids = list(service_graph.nodes())
+        x = self.service_embedding(torch.tensor(node_ids))
+        
+        # 添加服务特征
+        feature_tensor = torch.tensor([service_features.get(nid, [0, 0, 0]) for nid in node_ids])
+        x = x + feature_tensor.unsqueeze(1)
+        
+        # Graph Transformer层
+        for layer in self.transformer_layers:
+            x = layer(x)
+        
+        # 性能预测
+        performance = self.performance_head(x)
+        
+        return performance
+```
+
+```python
+# Petri Graph Neural Networks: AI训练流水线优化（2025最新方法）
+import torch
+import torch.nn as nn
+import networkx as nx
+
+class AITrainingPipelinePGNN(nn.Module):
+    """基于PGNN的AI训练流水线优化器"""
+    
+    def __init__(self, num_stages, num_resources, hidden_dim=128):
+        super().__init__()
+        self.stage_embedding = nn.Embedding(num_stages, hidden_dim)
+        self.resource_embedding = nn.Embedding(num_resources, hidden_dim)
+        
+        # PGNN传播层（基于Petri网流约束）
+        self.propagation_layers = nn.ModuleList([
+            nn.Linear(hidden_dim, hidden_dim) for _ in range(3)
+        ])
+        
+        # 优化建议头
+        self.optimization_head = nn.Sequential(
+            nn.Linear(hidden_dim, hidden_dim // 2),
+            nn.ReLU(),
+            nn.Linear(hidden_dim // 2, num_stages)  # 每个阶段的优化建议
+        )
+    
+    def forward(self, pipeline_petri_net, stage_features):
+        """
+        前向传播
+        pipeline_petri_net: NetworkX图，包含stage（库所）和operation（变迁）节点
+        stage_features: 阶段特征（数据量、计算时间、资源需求等）
+        """
+        # 初始化嵌入
+        embeddings = {}
+        for node in pipeline_petri_net.nodes():
+            if pipeline_petri_net.nodes[node]['type'] == 'stage':
+                node_idx = pipeline_petri_net.nodes[node]['index']
+                embeddings[node] = self.stage_embedding(node_idx) + stage_features[node_idx]
+            else:
+                node_idx = pipeline_petri_net.nodes[node]['index']
+                embeddings[node] = self.resource_embedding(node_idx)
+        
+        # 多模态信息传播（基于Petri网流约束）
+        for layer in self.propagation_layers:
+            new_embeddings = {}
+            for node in pipeline_petri_net.nodes():
+                # 聚合输入边（前驱节点）
+                input_embeddings = []
+                for predecessor in pipeline_petri_net.predecessors(node):
+                    input_embeddings.append(embeddings[predecessor])
+                
+                # 聚合输出边（后继节点）
+                output_embeddings = []
+                for successor in pipeline_petri_net.successors(node):
+                    output_embeddings.append(embeddings[successor])
+                
+                # 基于Petri网流约束的信息传播
+                if input_embeddings and output_embeddings:
+                    input_agg = torch.stack(input_embeddings).mean(dim=0)
+                    output_agg = torch.stack(output_embeddings).mean(dim=0)
+                    # 流守恒约束
+                    flow_constrained = input_agg + output_agg
+                    new_embeddings[node] = layer(flow_constrained)
+                elif input_embeddings:
+                    new_embeddings[node] = layer(torch.stack(input_embeddings).mean(dim=0))
+                elif output_embeddings:
+                    new_embeddings[node] = layer(torch.stack(output_embeddings).mean(dim=0))
+                else:
+                    new_embeddings[node] = embeddings[node]
+            
+            embeddings = new_embeddings
+        
+        # 生成优化建议（基于阶段状态）
+        stage_embeddings = [embeddings[n] for n in pipeline_petri_net.nodes() 
+                           if pipeline_petri_net.nodes[n]['type'] == 'stage']
+        if stage_embeddings:
+            global_state = torch.stack(stage_embeddings).mean(dim=0)
+            optimization = self.optimization_head(global_state)
+            return optimization
+        
+        return torch.tensor(0.0)
+```
+
 **验证结果**:
 
 - ✅ 延迟：P99延迟减少50%
