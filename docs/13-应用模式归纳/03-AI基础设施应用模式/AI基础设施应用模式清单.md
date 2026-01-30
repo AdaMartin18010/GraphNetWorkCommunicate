@@ -369,7 +369,7 @@ trans SaveCheckpoint(data : DataID, epoch : INT) =
 # Python: ML流水线死锁检测
 import networkx as nx
 
-def detect_pipeline_deadlock(pipeline_graph: nx.DiGraph, 
+def detect_pipeline_deadlock(pipeline_graph: nx.DiGraph,
                             resource_constraints: dict):
     """
     检测ML流水线死锁
@@ -380,7 +380,7 @@ def detect_pipeline_deadlock(pipeline_graph: nx.DiGraph,
     cycles = list(nx.simple_cycles(pipeline_graph))
     if cycles:
         return True, f"Cyclic dependencies detected: {cycles}"
-    
+
     # 检测资源死锁（所有任务等待资源）
     waiting_tasks = []
     for node in pipeline_graph.nodes():
@@ -388,20 +388,20 @@ def detect_pipeline_deadlock(pipeline_graph: nx.DiGraph,
         if node_data.get('status') == 'waiting':
             required_resources = node_data.get('required_resources', {})
             available_resources = resource_constraints.copy()
-            
+
             # 检查是否有足够资源
             can_proceed = all(
                 available_resources.get(resource, 0) >= count
                 for resource, count in required_resources.items()
             )
-            
+
             if not can_proceed:
                 waiting_tasks.append(node)
-    
+
     # 如果所有任务都在等待且没有资源释放，则死锁
     if len(waiting_tasks) == len(pipeline_graph.nodes()):
         return True, f"All tasks waiting for resources: {waiting_tasks}"
-    
+
     return False, None
 ```
 
@@ -489,21 +489,21 @@ class FeatureDependencyGraph:
         self.graph = nx.DiGraph()
         self.feature_versions = {}
         self.feature_timestamps = {}
-    
+
     def add_feature(self, feature_name: str, version: int, timestamp: datetime):
         """添加特征节点"""
         self.graph.add_node(feature_name, version=version, timestamp=timestamp)
         self.feature_versions[feature_name] = version
         self.feature_timestamps[feature_name] = timestamp
-    
+
     def add_dependency(self, feature: str, depends_on: str):
         """添加特征依赖"""
         self.graph.add_edge(depends_on, feature)
-    
+
     def check_consistency(self, max_age_hours: int = 24) -> dict:
         """检查特征一致性"""
         inconsistencies = []
-        
+
         for feature in self.graph.nodes():
             # 检查特征是否过期
             timestamp = self.feature_timestamps.get(feature)
@@ -515,29 +515,29 @@ class FeatureDependencyGraph:
                         'issue': 'stale',
                         'age_hours': age.total_seconds() / 3600
                     })
-            
+
             # 检查依赖特征是否一致
             dependencies = list(self.graph.predecessors(feature))
             for dep in dependencies:
                 dep_version = self.feature_versions.get(dep)
                 feature_version = self.feature_versions.get(feature)
-                
+
                 # 如果依赖特征更新，当前特征应该重新计算
                 dep_timestamp = self.feature_timestamps.get(dep)
                 feature_timestamp = self.feature_timestamps.get(feature)
-                
+
                 if dep_timestamp and feature_timestamp and dep_timestamp > feature_timestamp:
                     inconsistencies.append({
                         'feature': feature,
                         'issue': 'dependency_newer',
                         'dependency': dep
                     })
-        
+
         return {
             'is_consistent': len(inconsistencies) == 0,
             'inconsistencies': inconsistencies
         }
-    
+
     def compute_topological_order(self) -> list:
         """计算特征计算顺序（拓扑排序）"""
         try:
@@ -603,14 +603,14 @@ class ModelDriftDetector:
         self.baseline_features = baseline_features
         self.baseline_persistence = None
         self._compute_baseline_topology()
-    
+
     def _compute_baseline_topology(self):
         """计算基线拓扑特征"""
         rips_complex = RipsComplex(points=self.baseline_features, max_edge_length=5.0)
         simplex_tree = rips_complex.create_simplex_tree(max_dimension=2)
         self.baseline_persistence = simplex_tree.persistence()
-    
-    def detect_drift(self, current_features: np.ndarray, 
+
+    def detect_drift(self, current_features: np.ndarray,
                     threshold: float = 0.3) -> Tuple[bool, dict]:
         """
         检测模型漂移
@@ -621,21 +621,21 @@ class ModelDriftDetector:
         rips_complex = RipsComplex(points=current_features, max_edge_length=5.0)
         simplex_tree = rips_complex.create_simplex_tree(max_dimension=2)
         current_persistence = simplex_tree.persistence()
-        
+
         # 比较持久同调特征
         baseline_h0 = [p for dim, p in self.baseline_persistence if dim == 0]
         baseline_h1 = [p for dim, p in self.baseline_persistence if dim == 1]
-        
+
         current_h0 = [p for dim, p in current_persistence if dim == 0]
         current_h1 = [p for dim, p in current_persistence if dim == 1]
-        
+
         # 计算持久性差异
         h0_diff = self._compute_persistence_difference(baseline_h0, current_h0)
         h1_diff = self._compute_persistence_difference(baseline_h1, current_h1)
-        
+
         # 检测漂移
         is_drift = h0_diff > threshold or h1_diff > threshold
-        
+
         drift_info = {
             'is_drift': is_drift,
             'h0_difference': h0_diff,
@@ -645,24 +645,24 @@ class ModelDriftDetector:
             'baseline_h1_count': len(baseline_h1),
             'current_h1_count': len(current_h1)
         }
-        
+
         return is_drift, drift_info
-    
+
     def _compute_persistence_difference(self, baseline: List, current: List) -> float:
         """计算持久性差异"""
         if not baseline and not current:
             return 0.0
-        
+
         # 计算持久性向量的差异（简化版本）
         baseline_persistences = [death - birth for birth, death in baseline]
         current_persistences = [death - birth for birth, death in current]
-        
+
         # 使用Wasserstein距离或简单的统计差异
         if baseline_persistences and current_persistences:
             baseline_mean = np.mean(baseline_persistences)
             current_mean = np.mean(current_persistences)
             return abs(baseline_mean - current_mean) / (baseline_mean + 1e-10)
-        
+
         return 1.0  # 如果一方为空，认为有显著差异
 ```
 
@@ -744,11 +744,11 @@ from collections import defaultdict
 class InferenceRequestGraph:
     def __init__(self):
         self.graph = nx.DiGraph()
-    
+
     def analyze_performance_bottlenecks(self) -> dict:
         """分析性能瓶颈"""
         model_stats = defaultdict(lambda: {'count': 0, 'total_latency': 0})
-        
+
         for request_id in self.graph.nodes():
             node_data = self.graph.nodes[request_id]
             if node_data.get('type') == 'request':
@@ -756,13 +756,13 @@ class InferenceRequestGraph:
                 latency = node_data.get('latency', 0)
                 model_stats[model_id]['count'] += 1
                 model_stats[model_id]['total_latency'] += latency
-        
+
         bottlenecks = []
         for model_id, stats in model_stats.items():
             avg_latency = stats['total_latency'] / stats['count']
             if avg_latency > 100.0:
                 bottlenecks.append({'model': model_id, 'avg_latency': avg_latency})
-        
+
         return {'bottlenecks': bottlenecks}
 ```
 
@@ -774,24 +774,24 @@ import torch.nn.functional as F
 
 class AIInfrastructureGraphTransformer(nn.Module):
     """基于Graph Transformer的AI基础设施性能优化"""
-    
+
     def __init__(self, d_model=128, nhead=8, num_layers=3, num_services=100):
         super().__init__()
         self.service_embedding = nn.Embedding(num_services, d_model)
-        
+
         # Graph Transformer层
         self.transformer_layers = nn.ModuleList([
             nn.TransformerEncoderLayer(d_model, nhead, dim_feedforward=512)
             for _ in range(num_layers)
         ])
-        
+
         # 性能预测头
         self.performance_head = nn.Sequential(
             nn.Linear(d_model, d_model // 2),
             nn.ReLU(),
             nn.Linear(d_model // 2, 3)  # 预测延迟、吞吐量、资源利用率
         )
-    
+
     def forward(self, service_graph, service_features):
         """
         前向传播
@@ -801,18 +801,18 @@ class AIInfrastructureGraphTransformer(nn.Module):
         # 节点特征编码
         node_ids = list(service_graph.nodes())
         x = self.service_embedding(torch.tensor(node_ids))
-        
+
         # 添加服务特征
         feature_tensor = torch.tensor([service_features.get(nid, [0, 0, 0]) for nid in node_ids])
         x = x + feature_tensor.unsqueeze(1)
-        
+
         # Graph Transformer层
         for layer in self.transformer_layers:
             x = layer(x)
-        
+
         # 性能预测
         performance = self.performance_head(x)
-        
+
         return performance
 ```
 
@@ -824,24 +824,24 @@ import networkx as nx
 
 class AITrainingPipelinePGNN(nn.Module):
     """基于PGNN的AI训练流水线优化器"""
-    
+
     def __init__(self, num_stages, num_resources, hidden_dim=128):
         super().__init__()
         self.stage_embedding = nn.Embedding(num_stages, hidden_dim)
         self.resource_embedding = nn.Embedding(num_resources, hidden_dim)
-        
+
         # PGNN传播层（基于Petri网流约束）
         self.propagation_layers = nn.ModuleList([
             nn.Linear(hidden_dim, hidden_dim) for _ in range(3)
         ])
-        
+
         # 优化建议头
         self.optimization_head = nn.Sequential(
             nn.Linear(hidden_dim, hidden_dim // 2),
             nn.ReLU(),
             nn.Linear(hidden_dim // 2, num_stages)  # 每个阶段的优化建议
         )
-    
+
     def forward(self, pipeline_petri_net, stage_features):
         """
         前向传播
@@ -857,7 +857,7 @@ class AITrainingPipelinePGNN(nn.Module):
             else:
                 node_idx = pipeline_petri_net.nodes[node]['index']
                 embeddings[node] = self.resource_embedding(node_idx)
-        
+
         # 多模态信息传播（基于Petri网流约束）
         for layer in self.propagation_layers:
             new_embeddings = {}
@@ -866,12 +866,12 @@ class AITrainingPipelinePGNN(nn.Module):
                 input_embeddings = []
                 for predecessor in pipeline_petri_net.predecessors(node):
                     input_embeddings.append(embeddings[predecessor])
-                
+
                 # 聚合输出边（后继节点）
                 output_embeddings = []
                 for successor in pipeline_petri_net.successors(node):
                     output_embeddings.append(embeddings[successor])
-                
+
                 # 基于Petri网流约束的信息传播
                 if input_embeddings and output_embeddings:
                     input_agg = torch.stack(input_embeddings).mean(dim=0)
@@ -885,17 +885,17 @@ class AITrainingPipelinePGNN(nn.Module):
                     new_embeddings[node] = layer(torch.stack(output_embeddings).mean(dim=0))
                 else:
                     new_embeddings[node] = embeddings[node]
-            
+
             embeddings = new_embeddings
-        
+
         # 生成优化建议（基于阶段状态）
-        stage_embeddings = [embeddings[n] for n in pipeline_petri_net.nodes() 
+        stage_embeddings = [embeddings[n] for n in pipeline_petri_net.nodes()
                            if pipeline_petri_net.nodes[n]['type'] == 'stage']
         if stage_embeddings:
             global_state = torch.stack(stage_embeddings).mean(dim=0)
             optimization = self.optimization_head(global_state)
             return optimization
-        
+
         return torch.tensor(0.0)
 ```
 
@@ -976,23 +976,23 @@ import numpy as np
 class ABTestTopologyAnalyzer:
     def __init__(self):
         self.group_features = {}
-    
+
     def analyze_allocation_fairness(self) -> dict:
         """分析流量分配公平性"""
         fairness_metrics = {}
-        
+
         for group, features_list in self.group_features.items():
             features_array = np.array(features_list)
             rips_complex = RipsComplex(points=features_array, max_edge_length=5.0)
             simplex_tree = rips_complex.create_simplex_tree(max_dimension=2)
             persistence = simplex_tree.persistence()
-            
+
             h0_count = len([p for dim, p in persistence if dim == 0])
             fairness_metrics[group] = {
                 'user_count': len(features_list),
                 'h0_components': h0_count
             }
-        
+
         return fairness_metrics
 ```
 
@@ -1061,7 +1061,7 @@ class ABTestTopologyAnalyzer:
 
 - [x] ✅ 补充更多案例（推理服务、A/B测试）
 - [x] ✅ 添加具体代码示例（Petri网模型、TDA代码）
-- [ ] 与实际AI基础设施工具集成指南
+- [x] 与实际AI基础设施工具集成指南（见 [03-工具集成指南.md](03-工具集成指南.md)）
 
 ---
 
@@ -1072,28 +1072,33 @@ class ABTestTopologyAnalyzer:
 ### 7.1 ML流水线验证最新进展
 
 **AVATAR系统**:
+
 - **研究**: 专门用于ML流水线形式化验证的系统
 - **应用**: 训练流水线可靠性保证、资源管理优化
 - **特点**: 支持大规模分布式训练验证
 
 **Petri网在ML工作流中的应用**:
+
 - **研究**: 使用Petri网建模Kubeflow/MLflow工作流
 - **应用**: 工作流可靠性验证、资源优化
 
 ### 7.2 模型监控最新进展
 
 **LLM-Graph学习融合**:
+
 - **研究**: 使用LLM增强的图学习进行模型漂移检测
 - **应用**: 大语言模型的性能监控、漂移预警
 - **工具**: LangChain + NetworkX + GUDHI
 
 **拓扑数据分析在模型监控中的应用**:
+
 - **研究**: 使用持久同调检测模型性能退化模式
 - **应用**: 早期性能退化预警、异常模式识别
 
 ### 7.3 特征平台最新进展
 
 **实时特征计算**:
+
 - **研究**: 基于Flink的实时特征计算引擎
 - **应用**: 在线特征服务、实时特征一致性保证
 - **工具**: Feast + Flink组合
