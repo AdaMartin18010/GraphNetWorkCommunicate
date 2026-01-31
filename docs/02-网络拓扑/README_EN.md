@@ -20,6 +20,8 @@ This module covers the theoretical foundations, structure types, optimization me
 4. **[03-小世界网络.md](03-小世界网络.md)** - Small-world network theory and applications
 5. **[99-理论应用与案例.md](99-理论应用与案例.md)** - Theoretical applications and engineering cases
 
+**Mind representation tools**: 13 topic collections (structure, optimization, small-world, scale-free, community detection, centrality, optimization theory, dynamics, generation models, resilience, **sampling**, **clustering**, definition & theorem trees). See [README (Chinese) - 思维表征工具集合](README.md#思维表征工具集合).
+
 ### 🔬 **Core Concepts**
 
 - **Basic Topologies**: Star, ring, bus, tree, mesh
@@ -167,8 +169,8 @@ All documents in this module have been updated to the latest research progress (
 
 ---
 
-**Module Version**: v3.1
-**Last Updated**: January 2025
+**Module Version**: v3.2
+**Last Updated**: February 2025
 **Quality Level**: ⭐⭐⭐⭐⭐ Five Stars
 **International Alignment**: 100% Compliant ✅
 **Completion Status**: Continuously Updated ⚙️
