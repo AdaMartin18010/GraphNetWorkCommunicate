@@ -10,6 +10,18 @@
 **公理-定理-证明推理树与概念-定义-判断树**: 见 [思维表征工具集合-复杂系统定义树与定理树-完整版-2025](思维表征工具集合-复杂系统定义树与定理树-完整版-2025.md)。
 **思维表征与 View 双向绑定**: 见 [View 文件夹思维表征工具集-2025](../../view/View文件夹思维表征工具集-2025.md)、[View 文件夹对比矩阵集-2025](../../view/View文件夹对比矩阵集-2025.md)。
 **理论关系与跨模块索引**：见 [12-理论关系与认知框架](../12-理论关系与认知框架/README.md)。
+
+### 📚 **课程对标 / Course Alignment**
+
+本模块内容与以下国际顶级课程对应：
+
+| 课程 | 对应内容 | 章节映射 |
+|------|----------|----------|
+| **Santa Fe Institute** Introduction to Complexity | 涌现、自组织、复杂网络 | 01-复杂系统基础、04-涌现性质 |
+| **MIT 18.S997** Mathematics of Machine Learning | 多尺度分析、非线性动力学 | 03-动力学建模 |
+| **Stanford EE364b** Convex Optimization II | 网络优化、分布式算法 | 02-多尺度网络模型 |
+
+**权威教材对标**：Strogatz《Nonlinear Dynamics and Chaos》；Bar-Yam《Dynamics of Complex Systems》；Newman《Networks》。
 **完成状态**: 已覆盖；持续深化中
 
 ### 📖 **核心术语表（节选） / Core Terminology**
@@ -21,6 +33,12 @@
 | 尺度耦合 | Scale coupling | 不同尺度间能量/信息/物质的传递 | 03-动力学建模/02-尺度耦合动力学 |
 | 相变 | Phase transition | 系统宏观性质随参数突变 | 统计物理; 04-涌现性质 |
 | 复杂网络 | Complex network | 非平凡拓扑结构的网络（小世界、无标度等） | 00-复杂系统元模型; 复杂系统课程 |
+| 自组织 | Self-organization | 无外部控制下系统自发形成有序结构 | Prigogine; Kauffman; 复杂系统教材 |
+| 临界性 | Criticality | 系统处于相变临界点附近的状态 | Bak *Self-Organized Criticality*; 统计物理 |
+| 分形 | Fractal | 自相似的几何结构 | Mandelbrot; 分形几何教材 |
+| 混沌 | Chaos | 对初值敏感的确定性非线性动力学行为 | Lorenz; Strogatz *Nonlinear Dynamics* |
+| 适应性 | Adaptability | 系统调整结构/行为以应对环境变化的能力 | Holland; 复杂适应系统 |
+| 非线性动力学 | Nonlinear dynamics | 非线性方程描述的动力学系统 | Strogatz; 动力系统教材 |
 
 ## 🎯 **模块内容 / Module Contents**
 
@@ -241,7 +259,7 @@
 
 ## 📊 **文档索引维护状态 / Document Index Maintenance Status**
 
-**最后更新**: 2025年12月5日
+**最后更新**: 2026年2月（L5 2026-02 与最新研究 2025-2026 更新）
 
 ### ✅ **已维护索引**
 

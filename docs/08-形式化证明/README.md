@@ -10,6 +10,18 @@
 **公理-定理-证明推理树与概念-定义-判断树**: 见 [View 文件夹概念定义清单](../../view/View文件夹概念定义清单-2025.md)、[View 文件夹概念关系网络](../../view/View文件夹概念关系网络-2025.md)；本模块深度改进版含 Hoare 逻辑、分离逻辑、模型检测等推理结构。
 **思维表征与 View 双向绑定**: 见 [View 文件夹思维表征工具集-2025](../../view/View文件夹思维表征工具集-2025.md)、[View 文件夹对比矩阵集-2025](../../view/View文件夹对比矩阵集-2025.md)。
 **理论关系与跨模块索引**：见 [12-理论关系与认知框架](../12-理论关系与认知框架/README.md)。
+
+### 📚 **课程对标 / Course Alignment**
+
+本模块内容与以下国际顶级课程对应：
+
+| 课程 | 对应内容 | 章节映射 |
+|------|----------|----------|
+| **MIT 6.826** Principles of Computer Systems | 形式化规范、不变量、Hoare 逻辑 | 08-Hoare逻辑、05-应用领域/01-协议验证 |
+| **CMU 15-414** Bug Catching: Automated Program Verification | 模型检测、SMT 求解器 | 03-模型检测、02-自动定理证明 |
+| **Stanford CS357** Advanced Topics in Formal Methods | 交互式定理证明、Coq/Isabelle | 05-应用领域 |
+
+**权威出处对标**：Clarke et al.《Model Checking》；Pierce《Types and Programming Languages》；ACM CAV/FM 会议。
 **完成状态**: 已覆盖；持续深化中
 
 ### 🔗 **跨模块关联 / Cross-Module Relationships**
@@ -33,6 +45,12 @@
 | 定理证明 | Theorem proving | 从公理与规则推导出定理的形式化过程 | 02-自动定理证明; POPL/PLDI |
 | Hoare 逻辑 | Hoare logic | 程序正确性的形式化推理系统 | Hoare (1969); 08-Hoare逻辑-深度改进版-2025 |
 | 归结原理 | Resolution | 一阶逻辑中用于自动定理证明的推理规则 | Robinson (1965); 02-自动定理证明 |
+| 分离逻辑 | Separation logic | 用于堆内存推理的程序逻辑 | Reynolds (2002); O'Hearn; POPL |
+| 类型系统 | Type system | 通过类型检查保证程序性质的形式框架 | Pierce *TAPL*; ICFP |
+| Curry-Howard 对应 | Curry-Howard correspondence | 命题即类型、证明即程序的同构 | Howard (1980); Wadler |
+| SMT 求解器 | SMT solver | 可满足性模理论的自动决策程序 | Z3; CVC5; 模型检测工具链 |
+| 不变量 | Invariant | 程序执行过程中恒成立的性质 | Floyd; Hoare; 形式化验证教材 |
+| 规范 | Specification | 对系统行为的形式化描述 | Lamport TLA+; VDM; 形式化方法课程 |
 
 ## 🎯 **模块内容 / Module Contents**
 
@@ -293,7 +311,7 @@
 
 ## 📊 **文档索引维护状态 / Document Index Maintenance Status**
 
-**最后更新**: 2025年12月5日
+**最后更新**: 2026年2月（L5 2026-02 与最新研究 2025-2026 更新）
 
 ### ✅ **已维护索引**
 

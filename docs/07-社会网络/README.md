@@ -12,6 +12,18 @@
 **理论关系与跨模块索引**：见 [12-理论关系与认知框架](../12-理论关系与认知框架/README.md)。
 **完成状态**: 已覆盖；持续深化中
 
+### 📚 **课程对标 / Course Alignment**
+
+本模块内容与以下国际顶级课程对应：
+
+| 课程 | 对应内容 | 章节映射 |
+|------|----------|----------|
+| **Stanford CS224W** Machine Learning with Graphs | 社区检测、图嵌入、中心性 | 02-网络分析、05-高级理论 |
+| **Michigan SOC 712** Social Network Analysis | 同质性、结构洞、弱连接 | 01-社会网络基础、03-异质性与分层分析 |
+| **Oxford SNA 课程** | 影响力传播、DeGroot 模型、SIR | 99-理论应用与案例 |
+
+**权威教材对标**：Newman《Networks》；Wasserman & Faust《Social Network Analysis》；Barabási《Network Science》。
+
 ### 📖 **核心术语表（节选） / Core Terminology**
 
 | 中文 | 英文 | 简短定义 | 权威出处 |
@@ -21,6 +33,12 @@
 | 影响力最大化 | Influence maximization | 选择种子节点使传播范围最大 | Kempe et al. (2003); 05-高级理论 |
 | 度分布 | Degree distribution | 节点度数的概率分布 | 01-社会网络基础; 社会网络分析课程 |
 | 聚类系数 | Clustering coefficient | 邻居间连边比例 | Watts & Strogatz; 01-社会网络基础 |
+| 小世界网络 | Small-world network | 高聚类+短路径的网络结构 | Watts & Strogatz (1998); Newman |
+| 无标度网络 | Scale-free network | 度分布服从幂律的网络 | Barabási & Albert (1999); 01-社会网络基础 |
+| 弱连接强度 | Strength of weak ties | 弱连接在信息传播中的桥接作用 | Granovetter (1973); 社会网络分析课程 |
+| 结构洞 | Structural hole | 连接不相连社区的位置优势 | Burt (1992); 02-网络分析 |
+| 同质性 | Homophily | 相似节点更易建立连接的倾向 | McPherson et al. (2001); Wikipedia |
+| 网络效应 | Network effect | 用户价值随网络规模增加而增加 | Katz & Shapiro; 平台经济学 |
 
 ## 🎯 **模块内容 / Module Contents**
 
@@ -230,7 +248,7 @@
 
 ## 📊 **文档索引维护状态 / Document Index Maintenance Status**
 
-**最后更新**: 2025年12月5日
+**最后更新**: 2026年2月（L5 2026-02 与最新研究 2025-2026 更新）
 
 ### ✅ **已维护索引**
 

@@ -10,6 +10,18 @@
 **公理-定理-证明推理树与概念-定义-判断树**: 见 [思维表征工具集合-AI网络定义树与定理树-完整版-2025](思维表征工具集合-AI网络定义树与定理树-完整版-2025.md)。
 **思维表征与 View 双向绑定**: 见 [View 文件夹思维表征工具集-2025](../../view/View文件夹思维表征工具集-2025.md)、[View 文件夹对比矩阵集-2025](../../view/View文件夹对比矩阵集-2025.md)。
 **理论关系与跨模块索引**：见 [12-理论关系与认知框架](../12-理论关系与认知框架/README.md)。
+
+### 📚 **课程对标 / Course Alignment**
+
+本模块内容与以下国际顶级课程对应：
+
+| 课程 | 对应内容 | 章节映射 |
+|------|----------|----------|
+| **Stanford CS224W** Machine Learning with Graphs | GNN、图表示学习、消息传递 | 01-AI网络基础、03-自适应图神经网络 |
+| **MIT 6.S898** Deep Learning on Graphs | 图卷积、图注意力、图Transformer | 02-自适应机制 |
+| **CMU 10-708** Probabilistic Graphical Models | 概率图模型、推断 | 00-AI网络元模型 |
+
+**权威会议对标**：NeurIPS、ICLR、ICML（GNN/图学习论文）；Hamilton《Graph Representation Learning》。
 **完成状态**: 已覆盖；持续深化中
 
 ### 📖 **核心术语表（节选） / Core Terminology**
@@ -21,6 +33,12 @@
 | 图注意力 | Graph attention | 对邻居加权聚合的注意力机制 | Veličković et al. (2018); 03-自适应图神经网络 |
 | 自适应范畴 | Adaptive category | 结构/学习可随数据或任务演化的范畴论框架 | 00-AI网络元模型; 01-AI网络基础 |
 | 结构自适应 | Structural adaptation | 图结构随任务或数据动态调整 | 02-自适应机制/01-结构自适应 |
+| 图卷积 | Graph convolution | 在图上定义的卷积操作 | Defferrard et al. (2016); Kipf & Welling |
+| 过平滑 | Over-smoothing | 深层 GNN 节点表示趋同的问题 | Li et al. (2018); GNN 综述 |
+| 异质图 | Heterogeneous graph | 含多种节点/边类型的图 | Wang et al. HAN; 异质图网络综述 |
+| 可解释性 | Explainability | 解释模型预测的能力 | GNNExplainer; Ying et al. (2019) |
+| 归纳偏置 | Inductive bias | 模型对特定模式的先验偏好 | Hamilton *Graph Representation Learning* |
+| 时序图 | Temporal graph | 边/节点随时间演化的动态图 | Kazemi et al.; 时序图网络综述 |
 
 ## 🎯 **模块内容 / Module Contents**
 
@@ -234,7 +252,7 @@
 
 ## 📊 **文档索引维护状态 / Document Index Maintenance Status**
 
-**最后更新**: 2025年12月5日
+**最后更新**: 2026年2月（L5 2026-02 与最新研究 2025-2026 更新）
 
 ### ✅ **已维护索引**
 
@@ -250,7 +268,7 @@
 ---
 
 **模块版本**: v3.2
-**最后更新**: 2025年12月5日
+**最后更新**: 2026年2月（L5 2026-02 与最新研究 2025-2026 更新）
 **质量等级**: ⭐⭐⭐⭐⭐ 五星级
 **国际对标**: 100% 达标 ✅
 **完成状态**: 持续更新中 ⚙️

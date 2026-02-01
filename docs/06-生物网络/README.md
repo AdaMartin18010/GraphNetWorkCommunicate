@@ -12,6 +12,18 @@
 **理论关系与跨模块索引**：见 [12-理论关系与认知框架](../12-理论关系与认知框架/README.md)。
 **完成状态**: 已覆盖；持续深化中
 
+### 📚 **课程对标 / Course Alignment**
+
+本模块内容与以下国际顶级课程对应：
+
+| 课程 | 对应内容 | 章节映射 |
+|------|----------|----------|
+| **MIT 7.91** Foundations of Computational and Systems Biology | 基因调控网络、网络模体 | 02-基因调控网络、03-网络模体与异质性 |
+| **Stanford BIOE 214** Computational Methods for Biological Data | 蛋白质互作、代谢网络 | 00-生物网络元模型、99-理论应用与案例 |
+| **Harvard AM 207** Statistical Inference and Data Science | 网络动力学、稳健性分析 | 05-高级理论/生物网络动力学分析 |
+
+**权威教材对标**：Alon *An Introduction to Systems Biology*；Barabási *Network Medicine*；Dayan & Abbott *Theoretical Neuroscience*。
+
 ### 📖 **核心术语表（节选） / Core Terminology**
 
 | 中文 | 英文 | 简短定义 | 权威出处 |
@@ -21,6 +33,12 @@
 | 蛋白质相互作用网络 | PPI network | 蛋白质间物理/功能相互作用的图 | Wikipedia Protein–protein interaction |
 | 代谢网络 | Metabolic network | 代谢反应与代谢物构成的图 | 00-生物网络元模型; 生物信息学课程 |
 | 稳态 | Steady state | 动力学系统的不变平衡态 | 05-高级理论/01-生物网络动力学分析 |
+| 前馈环 | Feed-forward loop | 三节点调控环，X→Y→Z 且 X→Z | Alon; Shen-Orr et al.; 03-网络模体与异质性 |
+| Hill 函数 | Hill function | 描述基因表达饱和曲线的数学函数 | Hill (1910); Alon *Systems Biology* |
+| 神经元动力学 | Neuronal dynamics | 神经元膜电位随时间变化的模型 | Hodgkin & Huxley (1952); Dayan & Abbott |
+| 稳健性 | Robustness | 网络对扰动保持功能的能力 | Barkai & Leibler; 生物网络文献 |
+| 可塑性 | Plasticity | 网络结构/功能随环境调整的能力 | Turrigiano; 神经可塑性文献 |
+| 信号转导网络 | Signal transduction network | 细胞内信号传递的分子网络 | Wikipedia Signal transduction |
 
 ## 🎯 **模块内容 / Module Contents**
 
@@ -203,7 +221,7 @@
 
 ## 📊 **文档索引维护状态 / Document Index Maintenance Status**
 
-**最后更新**: 2025年12月5日
+**最后更新**: 2026年2月（L5 2026-02 与最新研究 2025-2026 更新）
 
 ### ✅ **已维护索引**
 
@@ -220,7 +238,7 @@
 ---
 
 **模块版本**: v3.2
-**最后更新**: 2025年12月5日
+**最后更新**: 2026年2月（L5 2026-02 与最新研究 2025-2026 更新）
 **质量等级**: ⭐⭐⭐⭐⭐ 五星级
 **国际对标**: 100% 达标 ✅
 **完成状态**: 持续更新中 ⚙️
