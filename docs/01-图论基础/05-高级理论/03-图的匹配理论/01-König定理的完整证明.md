@@ -130,6 +130,8 @@ $$\nu(G) = \tau(G) \quad \square$$
 - [加权匹配算法](04-加权匹配算法.md)
 - [图论高级理论主目录](../../README.md)
 
+**权威出处**：König (1931) 原论文；Diestel, *Graph Theory*, Ch.2；MIT 18.217 图论课程。
+
 ---
 
 **文档版本**: v1.0
